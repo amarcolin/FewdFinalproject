@@ -1,0 +1,27 @@
+/*
+font-family: 
+font-family: 
+
+color palette:
+
+
+
+TABLE OF CONTENTS
+    1. global styles
+    2. header
+    3. nav styles
+    4. special styles
+    5. info styles
+    6. footer
+    7. form
+    8. Mid-screen layout
+    9. Large-screen layout
+*/
+
+/* 1. global styles */
+
+* {                 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}           /*  This is just a place holder  */
