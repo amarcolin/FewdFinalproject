@@ -37,7 +37,7 @@ TABLE OF CONTENTS
 
 
 /* FORM SUPPORT US */
-section.formSupport h4 {
+section.formSupport h4, .wishList h4 {
     color: #3662F8;
     text-transform: uppercase;
     text-align: center;
@@ -50,14 +50,15 @@ fieldset {
     border: none;
 }
 
-ul{
+.formSupport ul{
     list-style-type: none;
 }
 
 
 fieldset#cardField {
     background-color: #FFF3CE;
-    margin: .75em
+    margin: .75em;
+    /* max-width: 400px; */
 }
 #cardForm {
     display: grid;
@@ -165,4 +166,15 @@ fieldset#donateButtons {
   
   .donateAmount label:hover {
     background: #DDD;
+}
+
+/* WISH LIST */
+.wishList{
+    background-color: #FFF3CE;
+    margin: .75em;
+}
+
+.wishList ul {
+    padding: 1em 1.75em;
+    
 }
