@@ -12,7 +12,7 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700&family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
 </head>
 <body>
    <section id="container">
@@ -36,12 +36,13 @@
 	   		   <h3>Thank you for supporting ARF</h3>
 	       </header>
            
-           <h4>Monetary donations</h4>
+           
 
-           <section class="form">
+           <section class="formSupport">
+            <h4>Monetary donations</h4>
             <form action="#" method="POST" id="contactForm" enctype="text/plain">
                 <fieldset>
-                    <ul class="donate-now">
+                    <ul class="donateAmount">
                         <li>
                           <input type="radio" id="a25" name="amount" />
                           <label for="a25">$25</label>
@@ -67,35 +68,35 @@
                         </li>
                       </ul>
                 </fieldset>                
-                <fieldset>                    
+                <fieldset id="cardField">                    
                     <ul id="cardForm">
-                        <li>
+                        <li id="item1">
                             <label for="fName">First Name</label>
                             <input type="text" id="fName" name="first_name" required>
                         </li>
-                        <li>
+                        <li id="item2">
                             <label for="lName">Last Name</label>
                             <input type="text" id="lName" name="last_name" required>
                         </li>
-                        <li>
+                        <li id="item3">
                             <label for="email">E-Mail:</label>
                             <input type="email" id="email" name="email" required>
                         </li>
-                        <li>
+                        <li id="item4">
                             <label for="cardNum">Card Number</label>
                             <input type="text" id="cardNum" name="cardNum" required>
                         </li>
-                        <li>
-                            <label for="cvv">Card Number</label>
+                        <li id="item5">
+                            <label for="cvv">CVV</label>
                             <input type="text" id="cvv" name="cvv" required>
                         </li>
-                        <li>
+                        <li id="item6">
                             <label for="exp">Exp. Date</label>
                             <input type="text" id="exp" name="exp" required>
                         </li>
                     </ul>
                     <input type="submit" id="submit" class="button" value="Send Funds">
-                    <img src="../images/pet-food.jpg" alt="dog without food">
+                    <!-- <img src="../images/pet-food.jpg" alt="dog without food"> -->
                 </fieldset>
             </form>
            </section>
