@@ -59,8 +59,7 @@ fieldset#cardField {
 }
 
 #item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / 3;
 }
 
 #item2{
@@ -92,17 +91,19 @@ fieldset#cardField {
     font-weight: bold;
 }
 
-div.wrap {
+div.wrapSummit {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-img {
+img.smallDog {
     margin: .75em 0 .75em .75em;
     width: 150px;
+}   
+img.bigDog{
+    display: none;
 }
-
 /* Donate buttons Fieldset */
 fieldset#donateButtons {
     padding: 0 .3em;
@@ -177,4 +178,40 @@ fieldset#donateButtons {
     font-family: 'Quicksand', sans-serif;
     padding: 1em 1.75em;
     line-height: 1.5;
+}
+
+
+/* break point */
+
+@media screen and (min-width: 642px){
+    div.wrapCardImg {
+        display: flex;
+        justify-content: center;
+        
+    }
+    img.smallDog {
+        
+        display: none;
+    }   
+    img.bigDog{
+        display: block;
+        padding: 1em;
+    }
+    #item1 {
+        grid-column: 1 / 2;
+    }
+    
+    #item2{
+        grid-column: 2 / 3;
+    }
+    .wishList ul {
+        display: grid;
+        grid-gap: .75em;
+        grid-template-columns: 1fr 1fr;
+    }
+    .wishList ul li:nth-child(odd){
+        grid-column: 1 / 2;
+        padding-right: .75em;
+        
+    }
 }
