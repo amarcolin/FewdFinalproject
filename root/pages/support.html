@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700&family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/support.css" type="text/css">
+
 </head>
 <body>
    <section id="container">
@@ -84,19 +86,23 @@
                         </li>
                         <li id="item4">
                             <label for="cardNum">Card Number</label>
-                            <input type="text" id="cardNum" name="cardNum" required>
+                            <input type="number" id="cardNum" name="cardNum" required>
                         </li>
                         <li id="item5">
                             <label for="cvv">CVV</label>
-                            <input type="text" id="cvv" name="cvv" required>
+                            <input type="number" id="cvv" name="cvv" required>
                         </li>
                         <li id="item6">
                             <label for="exp">Exp. Date</label>
                             <input type="text" id="exp" name="exp" required>
                         </li>
                     </ul>
-                    <input type="submit" id="submit" class="button" value="Send Funds">
-                    <!-- <img src="../images/pet-food.jpg" alt="dog without food"> -->
+                    
+                    <div class="wrap">
+                        <input type="submit" id="submit" class="button" value="Send Funds">
+                        <img src="../images/pet-food-sm.jpg" alt="dog without food">
+                    </div>
+                    
                 </fieldset>
             </form>
            </section>
