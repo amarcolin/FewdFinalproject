@@ -34,4 +34,123 @@ TABLE OF CONTENTS
     margin: 0;
     box-sizing: border-box;
 }           /*  This is just a place holder  */
+img { 
+    max-width: 100%;
+    height: auto;
+}
+/* Navigation Bar */
+
+nav.mainNav * {
+    padding: 0;
+    margin: .2rem;
+    border: none;
+}
+
+.mainNav  {
+    position: relative;
+
+}
+
+.mainNav li {
+    display: inline-block;
+    text-align: center;
+    width: 155px;
+    list-style-type: none;
+    position: relative;
+    
+         
+}
+
+li.active {
+    border-bottom: solid 3px #FEB200;
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+}
+
+input#navToggle {
+    display: none;
+}
+
+input#navToggle ~ label {
+    position: relative;
+    /* left: 90%; */
+    width: 2rem;
+    height: 1.25rem;
+    
+}
+
+input#navToggle ~ label > span,
+input#navToggle ~ label > span::before,
+input#navToggle ~ label > span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.5rem;
+    height: .25rem;
+    top: 0;
+    background-color: #333;
+}
+
+input#navToggle ~ label > span::before {
+    top: -.5rem;
+}
+
+input#navToggle ~ label > span::after {
+    top: .5rem;
+}
+
+nav ul {
+    position: absolute;
+    top: 1rem;
+    left: -110%;
+    width: 100%;
+    list-style-type: none;
+    background-color: #fff;
+    margin: 0!important;
+}
+
+#navToggle:checked ~ ul {
+    left: 0;
+}
+
+.mainNav a {
+    font-family: 'Poppins', sans-serif;
+    color: #3662F8;
+    text-decoration: none;
+    
+}
+
+/* banner */
+
+#arf {
+    color: white;
+    /* position: relative; */
+    text-align: center;
+    background-image: url('../images/bg-banner.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    height: 250px;
+    padding: 89px 0;
+}
+ 
+/* .centered1 {    
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      
+}
+
+.centered2 {    
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+} */
+
+
+/* Break Point */
 
