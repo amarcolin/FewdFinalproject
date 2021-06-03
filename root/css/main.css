@@ -29,6 +29,8 @@ TABLE OF CONTENTS
 
 /* 1. global styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&family=Poppins:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 * {                 
     padding: 0;
     margin: 0;
@@ -145,8 +147,14 @@ nav.mainNav ul {
     font-family: 'Nunito', sans-serif; 
     text-shadow: 1px 1px gray;
 }
-
- 
+#arf h2 {
+    font-size: 2em;
+    font-weight: 900;
+}
+#arf h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
 /* .centered1 {    
         position: absolute;
         top: 25%;
@@ -163,6 +171,26 @@ nav.mainNav ul {
   
 } */
 
+.infobox {
+    background-color: #FFB919;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1.5em;
+}
+.infobox p {
+    padding-bottom: 1em;
+    max-width: 1000px;
+    margin: auto;
+}
+.infobox p:last-child {
+    padding-bottom: 0;
+}
+.infobox a {
+    color: #fff;
+}
 
 /* Break Point */
 
@@ -195,6 +223,17 @@ nav.mainNav ul {
 
     img.logo {
         margin: 1em 1em 1em 0;
+    }
+    #arf {
+        height: 360px;
+    } 
+    #arf h2 {
+        font-size: 4em;
+        font-weight: bolder;
+    }
+    #arf h3 {
+        font-size: 2em;
+        font-weight: 400;
     }
 }
 
