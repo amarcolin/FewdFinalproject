@@ -1,15 +1,15 @@
 .petGallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .petList {
     list-style-type: none;
-    flex-grow: 1;
-    padding: 10px;
+    padding: 1vw 0;
 }
 .petCardBox {
-    width: 45vw;
-    height: 45vw;
+    width: 44vw;
+    height: 44vw;
     position: relative;
 }
 .petCard {
@@ -34,4 +34,22 @@
 .petCardAbout {
     color: #fff;
     padding: 0 15px 10px 15px;
+}
+
+@media screen and (min-width: 600px) {
+    .petCardBox {
+        width: 30vw;
+        height: 30vw;
+        
+    }
+}
+@media screen and (min-width: 859px) {
+    .availablePets {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .petCardBox {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
