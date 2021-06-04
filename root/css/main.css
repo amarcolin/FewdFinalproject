@@ -36,6 +36,16 @@ TABLE OF CONTENTS
     margin: 0;
     box-sizing: border-box;
 }           /*  This is just a place holder  */
+
+header, section, article, aside, nav, footer, main, figure, audio, video {
+    display: block;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Nunito', sans-serif;
+}
 img { 
     max-width: 100%;
     height: auto;
