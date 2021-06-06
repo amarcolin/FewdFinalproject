@@ -195,7 +195,7 @@ fieldset#donateButtons {
 
 /* break point */
 
-@media screen and (min-width: 733px){
+@media screen and (min-width: 774px){
     fieldset#cardField {
         background-color: #FFF3CE;
         margin: .75em;
