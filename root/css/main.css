@@ -52,7 +52,8 @@ img {
 }
 
 img.logoARF {
-    margin: 1em 0 0 2.5em;
+    margin: 1em 0 1em 2.5em;
+    width: 150px;
 }
 
 /* main header */
@@ -70,6 +71,7 @@ nav.mainNav * {
 
 .mainNav  {
     position: relative;
+    height: 0;
 }
 .mainNav ul{
     background-color: white;
@@ -248,7 +250,7 @@ input#navToggle ~ label > span::after {
  
         position: absolute;    
         left: -29px;
-        top: 22px;
+        top: 21px;
         display: none;
     }
     .mainNav ul li:hover ul{

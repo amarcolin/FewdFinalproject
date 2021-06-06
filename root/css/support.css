@@ -14,14 +14,18 @@ color palette:
 #FEF8E5 - pale yellow (block text background)
 #FF5E63 - red (accent color)
 
-
+*/
+main {
+    margin: auto;
+    max-width: 1000px;
+}
 /* FORM SUPPORT US */
 section.formSupport h4, .wishList h4 {
     font-size: 2em;
     color: #3662F8;
     text-transform: uppercase;
     text-align: center;
-    margin: .7em;
+    margin-top: .7em;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
 }
@@ -30,7 +34,7 @@ form {
 }
 fieldset {
     padding: 1em;
-    margin: .75em 0;
+    /* margin: .75em 0; */
     border: none;
 }
 
@@ -174,19 +178,19 @@ fieldset#donateButtons {
 
 
 /* WISH LIST */
-.wishList{
+.wishList{    
+    padding: 0 1em;    
     
-    background-color: #FFF3CE;
-    margin: .75em;
-
 }
 
 .wishList ul {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
-    padding: 1em 1.75em;
+    padding: 0 1em 0 2em;
     line-height: 1.5;
+    background-color: #FFF3CE;
 }
+
 
 
 /* break point */
@@ -196,6 +200,8 @@ fieldset#donateButtons {
         background-color: #FFF3CE;
         margin: .75em;
         width: auto;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     
@@ -214,7 +220,7 @@ fieldset#donateButtons {
     }
     #cardForm {
        
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     #item1 {
         grid-column: 1 / 3;
@@ -247,4 +253,6 @@ fieldset#donateButtons {
         padding-right: .75em;
         
     }
+
+    
 }
