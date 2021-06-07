@@ -10,8 +10,6 @@
     <meta name="author" content="#">
     <title>Available pets</title>
     
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700&family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <link rel="stylesheet" href="../css/availablePets.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -21,15 +19,28 @@
 <body>
     <section id="container">
         <header class="mainHeader">
-            <img src="../images/logo.png" alt="logoARF">
+            <img class="logoARF" src="../images/logo.png" alt="logoARF">
             <nav class="mainNav">
                 <input type="checkbox" id="navToggle" class="navToggle">
                 <label for="navToggle" class="navToggleLabel"><span></span></label>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../pages/about.html">About ARF</a></li>
-                    <li class="active"><a href="../pages/adopt.html">Adopt</a></li>
-                    <li><a href="../pages/support.html">Support Us</a></li>
+                    <li class="active"> 
+                        <a href="#">Adopt</a>
+                        <ul>
+                            <li><a href="../pages/availablePets.html">Available Pets</a></li>
+                            <li><a href="../pages/adoptionProcess.html">Adoption Process</a></li>
+                        </ul>     
+                    </li>
+                    <li>
+                        <a href="#">Support Us</a>
+                        <ul>
+                            <li><a href="../pages/support.html">Donate</a></li>
+                            <li><a href="../pages/foster.html">Foster</a></li>
+                            <li><a href="../pages/volunteer.html">Volunteer</a></li>
+                        </ul>                        
+                    </li>
                     <li><a href="../pages/shop.html">Shop ARF</a></li>
                     <li><a href="../pages/contact.html">Contact us</a></li>
                 </ul>
@@ -42,10 +53,11 @@
 	   		   <h3>Thank you for considering adopting instead of shopping!</h3>
 	       </header>
 	       <section class="infobox">
-               <p>We understand that sometimes people like certain breeds of pets.</p>
-               <p>If you couldn’t find what you’re looking for, please join our waiting list for special breeds <a class="textLink" href="#">HERE</a>.</p>
+               <p>We understand that sometimes people like certain types or breeds of pets.</p>
+               <p>If you couldn’t find what you’re looking for, please join our waiting list for special breeds <a class="textLink" href="#popupForm">HERE</a>.</p>
 	       </section>
 	    <section class="availablePets">  
+            <h2>They are looking for home right now!</h2>
             <ul class="petGallery">
                 <li class="petList">
                   <a class="petLink" href="pet1.html">
@@ -115,6 +127,111 @@
                 </li>
             </ul>
         </section>  <!-- END sect availablePets -->
+        
+        <div id="popupForm" class="overlay">
+            <div class="popup">
+                <h2>Contact Form</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <form action="#" method="POST" id="petForm" enctype="text/plain">
+                                   
+                            <fieldset id="personalInfo" class="petInfoBox"> 
+                                <legend>Personal Info</legend>  
+                                <div>                
+                                <ul>
+                                    <li>
+                                        <label for="fName">First Name:</label>
+                                        <input type="text" id="fName" name="first_name" required>
+                                    </li>
+                                    <li>
+                                        <label for="lName">Last Name:</label>
+                                        <input type="text" id="lName" name="last_name" required>
+                                    </li>
+                                    <li>
+                                        <label for="email">E-Mail:</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </li>
+                                </ul>  
+                            </div>                             
+                            </fieldset>
+                            <fieldset id="petInfo" class="petInfoBox">
+                                <legend>What pet are you looking for?</legend>
+                                
+                                <div class="typePet">
+                                    <h3>Select type of pet:</h3>
+                                    <ul class="radioList">
+                                        <li>
+                                            <input type="radio" id="dog" value="dog" name="dog">
+                                            <label for="dog">Dog</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="cat" value="cat" name="cat">
+                                            <label for="cat">Cat</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="agePet">
+                                    <h3>Select age of pet:</h3>
+                                    <ul class="radioList">
+                                        <li>
+                                            <input type="checkbox" name="age" id="young" value="young">
+                                            <label for="young">Young</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="age" id="adult" value="adult">
+                                            <label for="adult">Adult</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="age" id="senior" value="senior">
+                                            <label for="senior">Senior</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sexPet">
+                                    <h3>Select sex of pet:</h3>
+                                    <ul class="radioList">
+                                        <li>
+                                            <input type="checkbox" name="sex" id="m" value="m">
+                                            <label for="m">Male</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="sex" id="f" value="f">
+                                            <label for="f">Female</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="colorPet">
+                                    <h3>Select color of pet:</h3>
+                                    <select name="color" id="color">
+                                        <option value="">Select color:</option>
+                                        <option value="black">Black</option>
+                                        <option value="white">White</option>
+                                        <option value="brown">Brown</option>
+                                        <option value="red">Red</option>
+                                        <option value="tabby">Tabby</option>
+                                        <option value="other">None of these</option>
+                                        <option value="none">It doesn't matter</option>
+                                    </select>
+                                </div>
+                                <div class="descrPet">
+                                    <h3>Comments:</h3>
+                                    <textarea name="msg" id="description" placeholder="Write here a breed name or other information about a pet you are looking for..."></textarea>
+                                </div>
+
+                            </fieldset>
+                            <div class="buttons">
+                                <input type="reset" id="clear" class="button" value="Clear form">
+                                <input type="submit" id="submit" class="button" value="Submit">
+                            </div>
+    
+                         
+                        </form>
+                </div>
+            </div>
+        </div>
+
+
         </main>
     </section> <!-- END sect container -->
     <footer>
@@ -125,5 +242,6 @@
             Hollywood, MD 20636</p>
         <p>Adoption hours: Saturdays 11-2pm at Well pet Clinic</p>
     </footer>
+    <script src="../js/availablePets.js"></script>
     </body>
 </html>

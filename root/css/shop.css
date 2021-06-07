@@ -1,0 +1,84 @@
+/*
+font-family: 'Nunito', sans-serif; HEADERS
+font-family: 'Poppins', sans-serif; links, buttons, labels, menus.
+font-family: 'Quicksand', sans-serif; Paragraphs
+ 
+
+color palette:
+#313131 - dark grey for text
+#707070 - grey (footer background)
+#BABCBC - light grey for less used buttons (shop, search)
+#3662F8 - blue (headers, buttons, links, topbar menu)
+#F1F2FF - pale blue (block text background)
+#FFB919 - yellow (accent color)
+#FEF8E5 - pale yellow (block text background)
+#FF5E63 - red (accent color)
+*/
+
+.availableProducts h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #3662F8;
+    text-align: center;
+    margin: 1.1em auto;
+}
+.productGalery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.productList {
+    list-style-type: none;
+    padding: 1vw 0;
+}
+.productCardBox {
+    width: 44vw;
+    height: 44vw;
+    position: relative;
+}
+.productCard {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid 1px #717171;
+    border-radius: 15px;
+}
+.productCardData {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 1px;
+    background-color: rgba(112, 112, 112, .6);
+}
+.productCardName {
+    font-size: 1.2em;
+    padding: 10px 15px;
+    color: #fff;
+}
+.productCardAbout {
+    color: #fff;
+    padding: 0 15px 10px 15px;
+    min-height: 50px;
+}
+
+
+@media screen and (min-width: 600px) {
+    .productCardBox {
+        width: 30vw;
+        height: 30vw;
+    }
+}
+@media screen and (min-width: 859px) {
+    .availableProducts {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .availableProducts h2 {
+        font-size: 2.5em;;
+    }
+    .productCardBox {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    
+}

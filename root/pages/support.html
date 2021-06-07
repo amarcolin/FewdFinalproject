@@ -8,7 +8,7 @@
     <meta name="keywords" content="meta, meta tags, tags">
     <meta name="robots" content="index, follow or noindex nofollow">
     <meta name="author" content="#">
-    <title>Support Us</title>
+    <title>Donate</title>
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700&family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
@@ -19,97 +19,109 @@
 <body>
    <section id="container">
         <header class="mainHeader">
-            <img class="logo" src="../images/logo.png" alt="logoARF">
+            <img class="logoARF" src="../images/logo.png" alt="logoARF">
             <nav class="mainNav">
                 <input type="checkbox" id="navToggle" class="navToggle">
                 <label for="navToggle" class="navToggleLabel"><span></span></label>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../pages/about.html">About ARF</a></li>
-                    <li><a href="../pages/adopt.html">Adopt</a></li>
-                    <li class="active"><a href="../pages/support.html">Support Us</a></li>
+                    <li><a href="../pages/adopt.html">Adopt</a>
+                        <ul>
+                            <li><a href="../pages/availablePets.html">Available Pets</a></li>
+                            <li><a href="../pages/adoptionProcess.html">Adoption Process</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Support Us</a>
+                        
+                        <ul>
+                            <li class="active"><a href="../pages/support.html">Donate</a></li>
+                            <li><a href="../pages/foster.html">Foster</a></li>
+                            <li><a href="../pages/volunteer.html">Volunteer</a></li>
+                        </ul>    
+                    </li>
+                    </li>
                     <li><a href="../pages/shop.html">Shop ARF</a></li>
                     <li><a href="../pages/contact.html">Contact us</a></li>
                 </ul>
             </nav>   
         </header>
 	   
-	    <main>
-	       <header id="arf">
+	    
+	    <header id="arf">
 	           <h2>Animal Relief Fund</h2>
 	   		   <h3>Thank you for supporting ARF</h3>
-	       </header>
-           
-           
-
+	    </header>
+                  
+        <main>
            <section class="formSupport">
             
                 <form action="#" method="POST" id="contactForm" enctype="text/plain">
-                <h4>Monetary donations</h4>
-                <fieldset id="donateButtons">
-                    <ul class="donateAmount">
-                        <li>
-                          <input type="radio" id="a25" name="amount" />
-                          <label for="a25">$25</label>
-                        </li>
-                        <li>
-                          <input type="radio" id="a50" name="amount" />
-                          <label for="a50">$50</label>
-                        </li>
-                        <li>
-                          <input type="radio" id="a75" name="amount" checked="checked" />
-                          <label for="a75">$75</label>
-                        </li>
-                        <li>
-                          <input type="radio" id="a100" name="amount" />
-                          <label for="a100">$100</label>
-                        </li>
-                        <li>
-                          <input type="radio" id="other" name="amount" />
-                          <label for="other">other:</label>
-                        </li>
-                        <li>
-                          <input type="text" id="otherAmount" name="numAmount" />
-                        </li>
-                      </ul>
-                </fieldset>
-                <div class="wrapCardImg">            
-                    <fieldset id="cardField">                    
-                        <ul id="cardForm">
-                            <li id="item1">
-                                <label for="fName">First Name</label>
-                                <input type="text" id="fName" name="first_name" required>
+                    <h4>Monetary donations</h4>
+                    <fieldset id="donateButtons">
+                        <ul class="donateAmount">
+                            <li>
+                            <input type="radio" id="a25" name="amount" />
+                            <label for="a25">$25</label>
                             </li>
-                            <li id="item2">
-                                <label for="lName">Last Name</label>
-                                <input type="text" id="lName" name="last_name" required>
+                            <li>
+                            <input type="radio" id="a50" name="amount" />
+                            <label for="a50">$50</label>
                             </li>
-                            <li id="item3">
-                                <label for="email">E-Mail:</label>
-                                <input type="email" id="email" name="email" required>
+                            <li>
+                            <input type="radio" id="a75" name="amount" checked="checked" />
+                            <label for="a75">$75</label>
                             </li>
-                            <li id="item4">
-                                <label for="cardNum">Card Number</label>
-                                <input type="number" id="cardNum" name="cardNum" required>
+                            <li>
+                            <input type="radio" id="a100" name="amount" />
+                            <label for="a100">$100</label>
                             </li>
-                            <li id="item5">
-                                <label for="cvv">CVV</label>
-                                <input type="number" id="cvv" name="cvv" required>
+                            <li>
+                            <input type="radio" id="other" name="amount" />
+                            <label for="other">other:</label>
                             </li>
-                            <li id="item6">
-                                <label for="exp">Exp. Date</label>
-                                <input type="text" id="exp" name="exp" required>
+                            <li>
+                            <input type="text" id="otherAmount" name="numAmount" />
                             </li>
                         </ul>
-                        
-                        <div class="wrapSummit">
-                            <input type="submit" id="submit" class="button" value="Send Funds">
-                            <img class="smallDog" src="../images/pet-food-sm.jpg" alt="dog without food">
-                        </div>
-                        
                     </fieldset>
-                    <img class="bigDog" src="../images/pet-food.jpg" alt="dog without foog">
-                </div> 
+                    <div class="wrapCardImg">            
+                        <fieldset id="cardField">                    
+                            <ul id="cardForm">
+                                <li id="item1">
+                                    <label for="fName">First Name</label>
+                                    <input type="text" id="fName" name="first_name" placeholder="John" required>
+                                </li>
+                                <li id="item2">
+                                    <label for="lName">Last Name</label>
+                                    <input type="text" id="lName" name="last_name" placeholder="Smith" required>
+                                </li>
+                                <li id="item3">
+                                    <label for="email">E-Mail:</label>
+                                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                                </li>
+                                <li id="item4">
+                                    <label for="cardNum">Card Number</label>
+                                    <input type="text" id="cardNum" name="cardNum" inputmode="numeric" placeholder="1111-2222-3333-4444" required>
+                                </li>
+                                <li id="item5">
+                                    <label for="cvv">CVV</label>
+                                    <input type="number" id="cvv" name="cvv" placeholder="123" inputmode="numeric" required>
+                                </li>
+                                <li id="item6">
+                                    <label for="exp">Exp. Date</label>
+                                    <input type="text" id="exp" name="exp"  inputmode="numeric" placeholder="12/12" required>
+                                </li>
+                            </ul>
+                            
+                            <div class="wrapSummit">
+                                <input type="submit" id="submit" class="button" value="Send Funds">
+                                <img class="smallDog" src="../images/pet-food-sm.jpg" alt="dog without food">
+                            </div>
+                            
+                        </fieldset>
+                        <img class="bigDog" src="../images/pet-food.jpg" alt="dog without foog">
+                    </div> 
                 </form>
                 
            </section>

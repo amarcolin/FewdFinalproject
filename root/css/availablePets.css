@@ -1,15 +1,42 @@
+/*
+font-family: 'Nunito', sans-serif; HEADERS
+font-family: 'Poppins', sans-serif; links, buttons, labels, menus.
+font-family: 'Quicksand', sans-serif; Paragraphs
+ 
+
+color palette:
+#313131 - dark grey for text
+#707070 - grey (footer background)
+#BABCBC - light grey for less used buttons (shop, search)
+#3662F8 - blue (headers, buttons, links, topbar menu)
+#F1F2FF - pale blue (block text background)
+#FFB919 - yellow (accent color)
+#FEF8E5 - pale yellow (block text background)
+#FF5E63 - red (accent color)
+
+
+TABLE OF CONTENTS
+
+*/
+.availablePets h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #3662F8;
+    text-align: center;
+    margin: 1.1em auto;
+}
 .petGallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .petList {
     list-style-type: none;
-    flex-grow: 1;
-    padding: 10px;
+    padding: 1vw 0;
 }
 .petCardBox {
-    width: 45vw;
-    height: 45vw;
+    width: 44vw;
+    height: 44vw;
     position: relative;
 }
 .petCard {
@@ -34,4 +61,149 @@
 .petCardAbout {
     color: #fff;
     padding: 0 15px 10px 15px;
+}
+
+/* popup form */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    top: 20%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border: solid 1px #707070;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #3662F8;
+    text-align: center;
+    font-weight: 700;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #3662F8;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+.popup legend {
+    color: #3662F8;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .popup h3 {
+      font-size: 16px;
+      padding-bottom: 5px;
+  }
+  .popup div {
+      padding-left: 5px;
+      margin-bottom: 10px;
+  }
+.petInfoBox {
+    margin: 10px;
+}
+.colorPet {
+    padding-left: 5px;
+}
+#personalInfo li {
+    list-style-type: none;
+}
+#personalInfo li label {
+    display: inline-block;
+    width: 90px;
+}
+#personalInfo input {
+    width: 200px;
+    height: 25px;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 5px;
+}
+#petInfo li {
+      display: inline-block;
+      padding-right: 5px;
+      width: 100px;
+  }
+#color {
+      padding: 5px;
+      font-family: 'Quicksand', sans-serif;
+  }
+#description {
+      height: 100px;
+      width: 95%;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 16px;
+  }
+
+.buttons {
+    position: absolute;
+    right: 30px;
+    bottom: -5px;
+}
+.buttons input {
+    padding: 5px;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+#submit {
+    background-color: #3662F8;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+    .petCardBox {
+        width: 30vw;
+        height: 30vw;
+    }
+}
+@media screen and (min-width: 859px) {
+    .availablePets {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .availablePets h2 {
+        font-size: 2.5em;;
+    }
+    .petCardBox {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    
 }
