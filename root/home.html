@@ -11,17 +11,17 @@
     <title>Animal Relief Fund</title>
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700&family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/availablePets.css" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700&family=Poppins&family=Quicksand&display=swap" >
+    <link rel="stylesheet" href="../root/css/main.css" type="text/css">
+    <link rel="stylesheet" href="../root/css/availablePets.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../root/css/home.css" type="text/css">
 </head>
 <body>
     <section id="container">  <!-- NAVBAR -->
-        <header class="mainHeader">
-            <img src="images/svg/logo.svg" alt="logo ARF">
-            <nav class="mainNav">
+        <header class="arf">
+           <img class="logo" src="images/svg/logo.svg" alt="logo ARF">
+           <!--- <nav class="mainNav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../pages/about.html">About ARF</a></li>
@@ -31,28 +31,29 @@
                     <li><a href="../pages/contact.html">Contact us</a></li>
                 </ul>
             </nav>   
+        -->
         </header>
 	   
 	    <main>
-                                <!-------- INFO box ---------->
-	       <header id="arf">
+                                <!-------- BANNER ---------->
+	       <header id="arfBanner">
 	           <h2>Animal Relief Fund</h2>
-	   		   <h3>ARF is a non-profit organization dedicated to finding homes for abandoned animals.</h3>
+	   		   <p>ARF is a non-profit organization dedicated to finding homes for abandoned animals.</p>
 	       </header>
-	       <section class="infobox">
-               <p>We are located in Southern Maryland.
+	       <section id="infobox">
+               <p>We are located in Southern Maryland.<br>
                 We have wonderful animals in foster care right now looking for permanent loving homes.  Please stop by on our Adoption Saturdays and meet them. 
             </p>               
 	       </section>
                                   <!-------- BEGIN Adopt section ---------->
-	    <section class="Adopt a pet"> 
+	    <section class="availablePets"> 
             <h3>Adopt a pet</h3> 
             <ul class="petGallery">
                 <li class="petList">
                               <!---------- PET 1 BEGIN -------------------->
                   <a class="petLink" href="pet1.html">
                        <div class="petCardBox">
-                           <img class="petCard" src="../images/cat_bambi.jpg" alt="cat Bambi">
+                           <img class="petCard" src="images/Available pets/cat_bambi.jpg" alt="cat Bambi">
                            <div class="petCardData">
                                <h4 class="petCardName">Bambi</h4>
                                <p class="petCardAbout">1 year. Female</p>
@@ -64,7 +65,7 @@
                 <li class="petList">
                     <a href="pet2.html">
                        <div class="petCardBox">
-                           <img class="petCard" src="../images/dog_big_country.jpg" alt="dog Big Country">
+                           <img class="petCard" src="images/Available pets/dog_big_country.jpg" alt="dog Big Country">
                            <div class="petCardData">
                                <h4 class="petCardName">Big Country</h4>
                                <p class="petCardAbout">2 years. Male</p>
@@ -76,7 +77,7 @@
                 <li class="petList">
                     <a href="#">
                         <div class="petCardBox">
-                           <img class="petCard" src="../images/cat_fetty.jpg" alt="cat Fetty">
+                           <img class="petCard" src="images/Available pets/cat_fetty.jpg" alt="cat Fetty">
                            <div class="petCardData">
                                <h4 class="petCardName">Fetty</h4>
                                <p class="petCardAbout">2 years. Male</p>
@@ -88,7 +89,7 @@
                 <li class="petList">
                    <a href="#">
                        <div class="petCardBox">
-                           <img class="petCard" src="../images/cat_thumper.jpg" alt="cat Thumper">
+                           <img class="petCard" src="images/Available pets/cat_thumper.jpg" alt="cat Thumper">
                            <div class="petCardData">
                                <h4 class="petCardName">Thumper</h4>
                                <p class="petCardAbout">1 year. Male</p>
@@ -116,7 +117,7 @@
             <div>    <!-- News1 -->
                 <h3>Latest news</h3>
                 <div>
-                    <img class="petCard" src="../images/cat_thumper.jpg" alt="cat Thumper">
+                    <img class="petCard" src="images/Available pets/cat_thumper.jpg" alt="cat Thumper">
                     <h3>April 17, 2021</h3>
                     <h3>Adopted</h3>
                     <p>
@@ -128,7 +129,7 @@
             <div>  <!-- News2 -->
                     <h3>Latest news</h3>
                     <div>
-                    <img class="petCard" src="../images/cat_thumper.jpg" alt="cat Thumper">
+                    <img class="petCard" src="images/Available pets/cat_thumper.jpg" alt="cat Thumper">
                     <h3>April 17, 2021</h3>
                     <h3>Adopted</h3>
                     <p>
@@ -142,7 +143,7 @@
         </section>
                                 <!---------- CALLS TO ACTION BEGIN -------------------->
         <section class="callToAction">
-            <h3>Not ready to adopt?</h3>
+            <h3>Not ready<span>to adopt?</span></h3>
             <h4>ARF is a non-profit organization dedicated to finding homes for abandoned animals.</h4>
             <div class="container">
                 <ul class="mainList">
