@@ -28,6 +28,7 @@ TABLE OF CONTENTS
 */
 
 /* 1. global styles */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&family=Poppins:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {                 
     padding: 0;
@@ -35,6 +36,15 @@ TABLE OF CONTENTS
     box-sizing: border-box;
 }
           /*  This is just a place holder  */
+header, section, article, aside, nav, footer, main, figure, audio, video {
+    display: block;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Nunito', sans-serif;
+}        
 img { 
     max-width: 100%;
     height: auto;
@@ -163,8 +173,31 @@ nav.mainNav ul {
     transform: translate(-50%, -50%);
   
 } */
+.infobox {
+    background-color: #FFB919;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1.5em;
+}
+.infobox p {
+    padding-bottom: 1em;
+    max-width: 1000px;
+    margin: auto;
+}
+.infobox p:last-child {
+    padding-bottom: 0;
+}
+.infobox a {
+    color: #fff;
+}
 
-
+footer {
+    background: #707070;
+    color: #fff;
+}
 /* Break Point */
 
 @media screen and (min-width: 859px){
@@ -197,6 +230,16 @@ nav.mainNav ul {
     img.logo {
         margin: 1em 1em 1em 0;
     }
+    #arf {
+        height: 360px;
+    } 
+    #arf h2 {
+        font-size: 4em;
+        font-weight: bolder;
+    }
+    #arf h3 {
+        font-size: 2em;
+        font-weight: 400;
 }
 
 
