@@ -28,13 +28,23 @@ TABLE OF CONTENTS
 */
 
 /* 1. global styles */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&family=Poppins:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {                 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}           /*  This is just a place holder  */
+
+header, section, article, aside, nav, footer, main, figure, audio, video {
+    display: block;
 }
-          /*  This is just a place holder  */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Nunito', sans-serif;
+}
 img { 
     max-width: 100%;
     height: auto;
@@ -53,6 +63,9 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     margin: 2.75rem 0em;
+img.logoARF {
+    margin: 1em 0 1em 2.5em;
+    width: 150px;
 }
 
 /* main header */
@@ -70,22 +83,52 @@ nav.mainNav * {
 
 .mainNav  {
     position: relative;
-
+    height: 0;
 }
+.mainNav ul{
+    background-color: white;
+    
+}
+    
 
-.mainNav li {
-    display: inline-block;
+.mainNav ul > li{
+    display: block;
     text-align: center;
-    width: 96px; /*155*/
+    /* width: 96px;  */
+    /* height: 25px; */
     list-style-type: none;
-    position: relative;
-             
+    background-color: #fff;             
+}
+.mainNav li ul li {
+    
+    display: block;
+    background-color: #fff;
 }
 
-li.active {
+nav.mainNav > ul {
+    position: absolute;
+    top: -4px;
+    left: -110%;
+    width: 100%;
+    list-style-type: none;
+    
+    margin: 0!important;
+}
+
+.mainNav a {
+    font-family: 'Poppins', sans-serif;
+    color: #3662F8;
+    text-decoration: none;
+    display: block;
+    
+}
+
+
+li.active a {
     border-bottom: solid 3px #FEB200;
     border-left: solid 1px gray;
     border-right: solid 1px gray;
+    color: #EF4147;
 }
 
 input#navToggle {
@@ -94,10 +137,9 @@ input#navToggle {
 
 input#navToggle ~ label {
     position: relative;
-    /* left: 90%; */
     width: 2rem;
     height: 1.25rem;
-    /* top: -68px; */
+    
 }
 
 input#navToggle ~ label > span,
@@ -120,26 +162,13 @@ input#navToggle ~ label > span::after {
     top: .5rem;
 }
 
-nav.mainNav ul {
-    position: absolute;
-    top: -50px;
-    left: -110%;
-    width: 100%;
-    list-style-type: none;
-    background-color: #fff;
-    margin: 0!important;
-}
+
 
 #navToggle:checked ~ ul {
     left: 0;
 }
 
-.mainNav a {
-    font-family: 'Poppins', sans-serif;
-    color: #3662F8;
-    text-decoration: none;
-    
-}
+
 
 /* banner */
 
@@ -176,6 +205,14 @@ nav.mainNav ul {
     font-family: 'Quicksand', sans-serif;
     font-size: 5em;
 }
+#arf h2 {
+    font-size: 2em;
+    font-weight: 900;
+}
+#arf h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
 /* .centered1 {    
         position: absolute;
         top: 25%;
@@ -191,7 +228,47 @@ nav.mainNav ul {
     transform: translate(-50%, -50%);
   
 } */
+.infobox {
+    background-color: #FFB919;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1.5em;
+}
+.infobox p {
+    padding-bottom: 1em;
+    max-width: 1000px;
+    margin: auto;
+}
+.infobox p:last-child {
+    padding-bottom: 0;
+}
+.infobox a {
+    color: #fff;
+}
 
+.infobox {
+    background-color: #FFB919;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1.5em;
+}
+.infobox p {
+    padding-bottom: 1em;
+    max-width: 1000px;
+    margin: auto;
+}
+.infobox p:last-child {
+    padding-bottom: 0;
+}
+.infobox a {
+    color: #fff;
+}
 
 /* Break Point */
 
@@ -206,11 +283,10 @@ nav.mainNav ul {
     header.mainHeader {
         display: flex;
         align-items: center;
-        justify-content: center;
 
     }
 
-    nav.mainNav ul {
+    nav.mainNav > ul {
         display: flex;
         list-style: none;
         justify-content: space-around;
@@ -222,9 +298,136 @@ nav.mainNav ul {
         margin: .2rem;
     }
 
+    .mainNav ul ul {
+ 
+        position: absolute;    
+        left: -29px;
+        top: 21px;
+        display: none;
+    }
+    .mainNav ul li:hover ul{
+        display: block;
+    }
+
+    .mainNav ul > li {
+        position: relative;
+        width: 96px;
+    }
+
+    .mainNav li ul li {
+        width: 150px;
+    }
+
     img.logo {
         margin: 1em 1em 1em 0;
     }
+    #arf {
+        height: 360px;
+    } 
+    #arf h2 {
+        font-size: 4em;
+        font-weight: bolder;
+    }
+    #arf h3 {
+        font-size: 2em;
+        font-weight: 400;
+    }
+}
+
+/*------Footer--------*/
+
+.action-buttons {
+    position: relative;
+    padding: 0%;
+    margin: 0;
+    justify-content: center;
+    display:flex;
+    height: auto; 
+    justify-items: stretch;
+    object-fit: fill;
+
+    }
+
+.box {
+    position: relative;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    display:grid;
+    grid: gap 0;
+   grid-template-rows: repeat(5fr);
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+justify-content: space-evenly;
 }
 
 
+ .box h3 {
+     color:#fff;
+     text-align: center;
+     font-size: 1.3em;
+     text-transform:uppercase;
+     text-decoration: none;
+     padding-bottom: 2em;
+ }
+ .cell img {
+    display:block;
+     margin: auto;
+     padding: 1em;
+     max-width: 100%;
+ }
+ .cell {
+    align-items: center;
+     padding: 2em;
+     display: inline-flex;
+
+
+ }
+ .cell:nth-of-type(1) {
+    background: #3662F8;
+}
+
+ .cell:nth-of-type(2) {
+     background: #FEB200;
+ }
+
+.cell:nth-of-type(3) {
+    background: #BABCBC;
+}
+.cell:nth-of-type(4) {
+    background: #FF5E63;
+}
+
+
+footer {
+    padding: 2em 1em;
+        min-height: 100vh;
+        margin-top: 3em;
+        background: #707070;
+        color: #fff;
+}
+
+.footercontainer {
+    display: grid;  grid-template-columns: repeat(4, 10rem);  grid-gap: 2rem;
+}
+
+.facebook a {
+    float: right;
+    display: inline-flex;
+    color: #fff;
+    text-decoration: none;
+}
+.facebook img {
+    height: 100px;
+}
+.facebook {
+    justify-content: center;
+    align-content: ;
+}
+.facebook h3 {
+   display: inline-block;
+}
+.legal {
+    padding: 3em;
+   
+     clear: both;
+}
