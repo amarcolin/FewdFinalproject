@@ -51,27 +51,19 @@ img {
 }
 
 img.logo {
-    padding: 2em 3.25em;
-    height: auto;
-    width: auto;
-    max-width:50em;
+        margin: 1em 0 1em 2.5em;
+        width: 150px;    
 }
 
 h3 {
-    font: 9.25em 'Nunito', sans-serif;
     color: #3662F8;
     text-align: center;
     text-transform: uppercase;
     margin: 2.75rem 0em;
-img.logoARF {
-    margin: 1em 0 1em 2.5em;
-    width: 150px;
-}
-
+}  
 /* main header */
 header.mainHeader {
-    padding: 0 1em;
-    
+    padding: 0 1em;   
 }
 /* Navigation Bar */
 
@@ -168,9 +160,10 @@ input#navToggle ~ label > span::after {
     left: 0;
 }
 
-
+/* 
 
 /* banner */
+
 
 #arfBanner {
     display: flex;
@@ -183,28 +176,29 @@ input#navToggle ~ label > span::after {
     /* background-attachment: fixed; */
     background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/bg-banner.png') no-repeat center center;
     background-size: cover;
-    height: 40em;
-    padding: 3em 0 3em 16em;
+    height:10em; 
+    padding: 1em 1em;
 }
 #arfBanner h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 8em;
+    font-size: .6em ;
 }
 #arfBanner p {
     visibility: hidden;
 }
 /* info box */
-#infobox {
+.infobox {
     color: white;
     /* position: relative; */
     text-align: center;
     background-color: #FEB200;
     /* background-attachment: fixed; */
     background-size: cover;
-    padding: 1em 1em;
+    padding: 1em 1.3em 1.5em 1.3em;
     font-family: 'Quicksand', sans-serif;
-    font-size: 5em;
+    font-size: 1.1em;
 }
+/*
 #arf h2 {
     font-size: 2em;
     font-weight: 900;
@@ -213,59 +207,8 @@ input#navToggle ~ label > span::after {
     font-size: 1.5em;
     font-weight: normal;
 }
-/* .centered1 {    
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      
-}
+*/
 
-.centered2 {    
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-} */
-.infobox {
-    background-color: #FFB919;
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    font-size: 1.2em;
-    text-align: center;
-    padding: 1.5em;
-}
-.infobox p {
-    padding-bottom: 1em;
-    max-width: 1000px;
-    margin: auto;
-}
-.infobox p:last-child {
-    padding-bottom: 0;
-}
-.infobox a {
-    color: #fff;
-}
-
-.infobox {
-    background-color: #FFB919;
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    font-size: 1.2em;
-    text-align: center;
-    padding: 1.5em;
-}
-.infobox p {
-    padding-bottom: 1em;
-    max-width: 1000px;
-    margin: auto;
-}
-.infobox p:last-child {
-    padding-bottom: 0;
-}
 .infobox a {
     color: #fff;
 }
@@ -335,99 +278,3 @@ input#navToggle ~ label > span::after {
 }
 
 /*------Footer--------*/
-
-.action-buttons {
-    position: relative;
-    padding: 0%;
-    margin: 0;
-    justify-content: center;
-    display:flex;
-    height: auto; 
-    justify-items: stretch;
-    object-fit: fill;
-
-    }
-
-.box {
-    position: relative;
-    justify-content: center;
-    margin-left: 0;
-    margin-right: 0;
-    display:grid;
-    grid: gap 0;
-   grid-template-rows: repeat(5fr);
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-justify-content: space-evenly;
-}
-
-
- .box h3 {
-     color:#fff;
-     text-align: center;
-     font-size: 1.3em;
-     text-transform:uppercase;
-     text-decoration: none;
-     padding-bottom: 2em;
- }
- .cell img {
-    display:block;
-     margin: auto;
-     padding: 1em;
-     max-width: 100%;
- }
- .cell {
-    align-items: center;
-     padding: 2em;
-     display: inline-flex;
-
-
- }
- .cell:nth-of-type(1) {
-    background: #3662F8;
-}
-
- .cell:nth-of-type(2) {
-     background: #FEB200;
- }
-
-.cell:nth-of-type(3) {
-    background: #BABCBC;
-}
-.cell:nth-of-type(4) {
-    background: #FF5E63;
-}
-
-
-footer {
-    padding: 2em 1em;
-        min-height: 100vh;
-        margin-top: 3em;
-        background: #707070;
-        color: #fff;
-}
-
-.footercontainer {
-    display: grid;  grid-template-columns: repeat(4, 10rem);  grid-gap: 2rem;
-}
-
-.facebook a {
-    float: right;
-    display: inline-flex;
-    color: #fff;
-    text-decoration: none;
-}
-.facebook img {
-    height: 100px;
-}
-.facebook {
-    justify-content: center;
-    align-content: ;
-}
-.facebook h3 {
-   display: inline-block;
-}
-.legal {
-    padding: 3em;
-   
-     clear: both;
-}
