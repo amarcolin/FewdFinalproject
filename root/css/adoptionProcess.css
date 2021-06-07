@@ -32,8 +32,11 @@ main {
     line-height: 1.5;
 }
 .adoptionProcess h2{
-    text-align: center;
+    
     font-size: 2em;
+}
+.adoptionProcess h2, .adoptionProcess h3{
+    text-align: center;
 }
 .adoptionProcess h2, .adoptionProcess h3, .adoptionProcess p {
     margin-bottom: .5em;
