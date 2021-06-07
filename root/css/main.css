@@ -50,6 +50,19 @@ img {
     height: auto;
 }
 
+img.logo {
+    padding: 2em 3.25em;
+    height: auto;
+    width: auto;
+    max-width:50em;
+}
+
+h3 {
+    font: 9.25em 'Nunito', sans-serif;
+    color: #3662F8;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2.75rem 0em;
 img.logoARF {
     margin: 1em 0 1em 2.5em;
     width: 150px;
@@ -159,19 +172,38 @@ input#navToggle ~ label > span::after {
 
 /* banner */
 
-#arf {
+#arfBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* position: relative; */
+    /*background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/bg-banner.png') no-repeat center center;
+    background-size: cover;
+    height: 40em;
+    padding: 3em 0 3em 16em;
+}
+#arfBanner h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 8em;
+}
+#arfBanner p {
+    visibility: hidden;
+}
+/* info box */
+#infobox {
     color: white;
     /* position: relative; */
     text-align: center;
-    background-image: url('../images/bg-banner.png');
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-color: #FEB200;
     /* background-attachment: fixed; */
     background-size: cover;
-    height: 250px;
-    padding: 89px 15px;
-    font-family: 'Nunito', sans-serif; 
-    text-shadow: 1px 1px gray;
+    padding: 1em 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 5em;
 }
 #arf h2 {
     font-size: 2em;
