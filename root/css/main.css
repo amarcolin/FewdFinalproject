@@ -103,6 +103,13 @@ nav.mainNav > ul {
     margin: 0!important;
 }
 
+.mainNav a {
+    font-family: 'Poppins', sans-serif;
+    color: #3662F8;
+    text-decoration: none;
+    display: block;
+    
+}
 
 
 li.active a {
@@ -149,12 +156,6 @@ input#navToggle ~ label > span::after {
     left: 0;
 }
 
-.mainNav a {
-    font-family: 'Poppins', sans-serif;
-    color: #3662F8;
-    text-decoration: none;
-    
-}
 
 
 /* banner */
