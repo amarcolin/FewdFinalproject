@@ -59,7 +59,7 @@ h3 {
     color: #3662F8;
     text-align: center;
     text-transform: uppercase;
-    margin: 2.75rem 0em;
+    margin: 2rem 0em;
     font-weight: 900;
 }  
 /* main header */
@@ -185,12 +185,10 @@ input#navToggle ~ label > span::after {
     font-weight: 900;
     color: white;
 }
-
-#arf h3 {
-    font-size: 1.5em;
-    font-weight: normal;
-    color: white;
+#arfBanner p {
+    font-size: 1.2em;
 }
+
 /* info box */
 .infobox {
     color: white;
