@@ -24,7 +24,6 @@ TABLE OF CONTENTS
 */
 
 /* Gallery */
-
 .petGallery {
     display: flex;
     flex-wrap: wrap;
@@ -56,131 +55,42 @@ TABLE OF CONTENTS
 .petCardName {
     font-size: 1.2em;
     padding: 10px 15px;
-    color: #fff !important;
+    color: #fff;
 }
 .petCardAbout {
     color: #fff;
     padding: 0 15px 10px 15px;
 }
-
-.bttn {
-    display: flex;
-    padding: 0.8em 0.8em;
-    justify-content: center;
-    margin-bottom: 1em;
-}
-.bttn>a {
-    font: 1.2em 'Poppins', sans-serif;
-    text-align: center;
-    width: 100%;
-    color: #fff;
-    padding: 0.6em;
-    background-color: #3662F8;
-    text-decoration: none;
-    transition: 0.5s;
-    border-radius: 0.6em;
-    tranform: scale(0);
-}
-
-
 /* News + Events */
 .events, .news {
-    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
    padding: 1em 1.3em 1.5em 1.3em;
-   text-align: center;
 }
-.events h4 , .news h4 {
-    color:#3662F8;
-    font-size: 1.1em;
-    text-transform: uppercase;
-  padding-bottom: 0.6em;
-}
-
 .events {
     background-color: #F1F2FF;
-    justify-content: center;
-    line-height: 1.7em;
-}
-.events span {
-    padding-left: 1em;
 }
 
 .news {
     background-color: #FEF8E5;
-    display: inline-flexbox;
-    justify-content: space-evenly;
-
 }
+/* Call to action section - will fix later*/
 
-.news h5 {
-    display: inline;
-    color: #717171;
-    font-size: 1.0em;
-    text-transform: uppercase;
-    border-bottom: #707070 2px solid;
-}
-
-
-
-/* Call to action section - will fix
- later*/
- .ctaContainer {
-     display: flex;
- }
-.box {
-display: inline-block;
-width: 25%;
-}
-/*.callToAction {
+.callToAction {
     display: flex;
     flex-wrap: wrap;
-    
+    padding: auto 1em;
     margin: 1em 0;
     width:80%;
 }
-*/
-.ctaBox {
-    padding: 1em 1em;
-    color: #fff;
-    font: 1.2em 'Poppins', sans-serif;
-    height: 180px; 
-    padding: 2em;
-        }
 
-.ctaContainer:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-    .petGallery {
-        display: flexbox;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .petList {
-        list-style-type: none;
-        padding: 1vw 0;
-    }
-    .petCardBox {
-        width: 10vw;
-        height: 10vw;
-        position: relative;
-    }
-        .bttn {
-            display: inline-block;
-            padding: 0.8em 0.8em;
-            justify-content: center;
-            margin-bottom: 1em;
-     }
-    .bttn> a {
-            font: 1.2em 'Poppins', sans-serif;
-            text-align: center;
-            width: 40%;
-            color: #fff;
-            padding: 0.6em;
-            background-color: #3662F8;
-            text-decoration: none;
-            border-radius: 0.6em;
-          
-        }
-        
+.ctaContent {
+    background-color: #707070;
+}
+.ctaBox h3 {
+color: #fff;
+font: 1.2em 'Poppins', sans-serif; 
+}
+.description p {
+visibility: hidden;
+}

@@ -56,12 +56,10 @@ img.logoARF {
 }
 
 h3 {
-    font-size: 1.7em;
-    font-weight: 900;
     color: #3662F8;
     text-align: center;
     text-transform: uppercase;
-    margin: .75rem 0em;
+    margin: 2.75rem 0em;
 }  
 /* main header */
 header.mainHeader {
@@ -203,7 +201,6 @@ input#navToggle ~ label > span::after {
     padding: 1em 1.3em 1.5em 1.3em;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.1em;
-    margin-bottom: 1.7em;
 }
 /*
 #arf h2 {
@@ -287,7 +284,7 @@ input#navToggle ~ label > span::after {
 /*------Footer--------*/
 footer {
     background-color: #707070;
-    display: flexbox;
+    display: grid;
     width: 100%;
     height: auto; 
     color: #fff;
@@ -295,6 +292,7 @@ footer {
     text-transform: capitalize;
     padding: 1em 1.3em 1.5em 1.3em;
     text-align: center;
+    
 }
 
 .address {
@@ -315,4 +313,42 @@ footer {
     height:100%;
     width:100%;
     position:absolute;
+}
+
+.logoFB {
+    /* width: 100px; */
+    
+}
+
+img.logoBW {
+    
+    width: 150px;    
+}
+
+/* footer break point */
+
+
+@media screen and (min-width: 859px){
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .social {
+        grid: 1/2;
+    }
+
+    .address {
+        grid: 2/3;
+        margin: 0 .5em;
+    }
+
+    .map {        
+        grid: 3/4;
+    }
+
+    .copyRight {
+        grid-column: 2/3;
+    }
+
 }
