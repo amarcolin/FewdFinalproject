@@ -132,12 +132,12 @@ button a {
     }
 }
 @media screen and (min-width:859px) {
-    .petProfile {
-        max-width: 900px;
+    /* .petProfile {
+        max-width: 1000px;
         margin: auto;
-    }
+    } */
     .availablePets {
-        max-width: 900px;
+        max-width: 1000px;
     }
     
 }

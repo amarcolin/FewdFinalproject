@@ -27,10 +27,10 @@
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../pages/about.html">About ARF</a></li>
-                    <li class="active"> 
+                    <li id="active"> 
                         <a href="#">Adopt</a>
                         <ul>
-                            <li><a href="../pages/availablePets.html">Available Pets</a></li>
+                            <li class="active"><a href="../pages/availablePets.html">Available Pets</a></li>
                             <li><a href="../pages/adoptionProcess.html">Adoption Process</a></li>
                         </ul>     
                     </li>
@@ -48,12 +48,12 @@
             </nav>   
         </header>
 	   
-	    <main>
+	    
 	       <header id="arfBanner">
 	           <h2>Adopt a pet</h2>
-	   		   <h3>Thank you for considering adopting instead of shopping!</h3>
+               <p>Thank you for considering adopting instead of shopping!</p>
 	       </header>
-
+           <main>
 	       <section class="petProfile">
                 <h3>Meet Bambi</h3>
                 <div class="petInfo">
@@ -122,12 +122,48 @@
         </main>
     </section> <!-- END sect container -->
     <footer>
-        <p>Email us:<a href="mailto:info@animallifefund.org">info@animallifefund.org</a></p>
-        <p>Phone: (301)-866-0305</p>
-        <p>Mail us: Animal Relief Fund
-            P.O Box 10
-            Hollywood, MD 20636</p>
-        <p>Adoption hours: Saturdays 11-2pm at Well pet Clinic</p>
-    </footer>
+        <div class="footerContainer">
+        <div class="social">
+            <img class="logoBW" src="../images/svg/logobw.svg" alt="Logo white">
+            <a id="faceLink" href="https://www.facebook.com/Animal-Relief-Fund-ARF-272309059493160" target="_blank">                        
+                    <img id="faceLogo" src="../images/svg/faceLogo.svg" alt="facebook Logo">
+                    Follow ARF                        
+            </a>
+        </div>
+        <div class="address">
+            <table>
+                <tr>
+                    <th>Email us: </th> 
+                    <td><a href="mailto:info@animalrelieffund.org">info@animalrelieffund.org</a></td>
+                </tr>
+                <tr>
+                    <th>Phone: </th> 
+                    <td>(301)-866-0305</td>
+                </tr>
+                <tr>
+                    <th>Mail us: </th> 
+                    <td>Animal Relief Fund<br>
+                        P.O Box 10<br>
+                        Hollywood, MD 20636
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="map address">
+            <table>
+                <tr>
+                    <th>Adoption hours: </th> 
+                    <td>Saturdays 11-2pm at Well Pet Clinic</td>
+                </tr>
+            </table>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.2267169166144!2d-76.45944493038303!3d38.2649832324145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b761de5b56e167%3A0x8a1d75483bb826c4!2sWell%20Pet%20Clinic!5e0!3m2!1sen!2sus!4v1622655273434!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+    </div> <!-- END footerContainer sect  -->
+    <div class="copyRight">
+        <p>Copyrights reserved &copy; 2021</p>
+    </div>
+    </footer><!-- END footer-->
     </body>
 </html>

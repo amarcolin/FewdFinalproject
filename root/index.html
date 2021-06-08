@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700&family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/index.css" type="text/css"> 
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/petProfile.css" type="text/css"> 
 </head>
 <body>    
              <section id="container">  <!-- NAVBAR -->
@@ -25,7 +26,7 @@
                         <ul>
                             <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="pages/about.html">About ARF</a></li>
-                            <li><a href="pages/adopt.html">Adopt</a>
+                            <li><a href="#">Adopt</a>
                             <ul>
                                 <li><a href="pages/availablePets.html">Available Pets</a></li>
                                 <li><a href="pages/adoptionProcess.html">Adoption Process</a></li>
@@ -44,24 +45,26 @@
                     </nav>   
                 </header>
                
-                <main>
+                
                                         <!-------- BANNER ---------->
                    <header id="arfBanner">
                        <h2>Animal Relief Fund</h2>
-                          <p>ARF is a non-profit organization dedicated to finding homes for abandoned animals.</p>
+                          <p>Let's help to find homes for abandoned animals.</p>
                    </header>
                    <section class="infobox">
                        <p>We are located in Southern Maryland.<br>
                         We have wonderful animals in foster care right now looking for permanent loving homes.  Please stop by on our Adoption Saturdays and meet them. 
                     </p>               
                    </section>
+                <main> 
                                           <!-------- BEGIN Adopt section ---------->
-                                          <h3>Adopt a pet</h3> 
-                <section class="adoptSec">
+                                          
+                <section class="availablePets">
+                    <h3>Adopt a pet</h3>
                     <ul class="petGallery">
                         <li class="petList">
                                       <!---------- PET 1 BEGIN -------------------->
-                          <a class="petLink" href="pet1.html">
+                          <a class="petLink" href="pages/pet1.html">
                                <div class="petCardBox">
                                    <img class="petCard" src="images/availablePets/cat_bambi.jpg" alt="cat Bambi">
                                    <div class="petCardData">
@@ -73,7 +76,7 @@
                        </li>
                                        <!---------- PET 2 BEGIN -------------------->
                         <li class="petList">
-                            <a href="pet2.html">
+                            <a href="pages/pet2.html">
                                <div class="petCardBox">
                                    <img class="petCard" src="images/availablePets/dog_big_country.jpg" alt="dog Big Country">
                                    <div class="petCardData">
@@ -85,7 +88,7 @@
                         </li>
                                        <!---------- PET 3 BEGIN -------------------->
                         <li class="petList">
-                            <a href="#">
+                            <a href="pages/pet3.html">
                                 <div class="petCardBox">
                                    <img class="petCard" src="images/availablePets/cat_fetty.jpg" alt="cat Fetty">
                                    <div class="petCardData">
@@ -97,7 +100,7 @@
                         </li>
                                       <!---------- PET 4 BEGIN -------------------->
                         <li class="petList">
-                           <a href="#">
+                           <a href="pages/pet4.html">
                                <div class="petCardBox">
                                    <img class="petCard" src="images/availablePets/cat_thumper.jpg" alt="cat Thumper">
                                    <div class="petCardData">
@@ -108,14 +111,12 @@
                            </a>
                         </li>
                     </ul>
-                    <div class="bttn">
-                    <a href="../root/pages/availablePets.html">View more pets</a>
-                    </div>
+                    <button id="view"><a href="availablePets.html">View other pets</a></button>
                 </section>  <!-- END sect PET -->
                                         <!---------- EVENTS BEGIN -------------------->
                 <section class="events">
                     <h3>Coming up</h3>
-                    <h4>June 30<span>7 pm</span></h4>
+                    <h4>June 30 <span>7 pm</span></h4>
                     <p>join us for "fostering 101" via Zoom</p>
                     <p>
                         This Live Session will give a brief overview of the rewards and challenges of fostering dogs & cats.  
@@ -167,69 +168,90 @@
                         </div>
                     </div>
                     <div>  <!-- social -->
-                       <a href="#" target="_blank">
+                       <a href="https://www.facebook.com/Animal-Relief-Fund-ARF-272309059493160" target="_blank">
                         <i class="fab fa-facebook"></i> Follow us on Facebook for updates! </a>
                     </div>
                 
-                </section>
+                </section> <!-- END news sect  -->
 
                                         <!---------- CALLS TO ACTION BEGIN -------------------->
             <section class="ctaGrid">
-                <h3>Not ready<span>to adopt?</span></h3>
+                <h3>Not ready <span>to adopt?</span></h3>
                 <h4>You can support us in multiple ways:</h4>
             <div class="ctaContainer">
-            <div class="box"> <!---- Volunteer Box--->
-                <div class="ctaBox">
-                    <img class="ctaIcon" src="../root/images/svg/Volunteer.svg" alt="volunteerIcon">
-                    <h3>Volunteer</h3>
+                <div class="box"> <!---- Volunteer Box--->
+                    <div class="ctaBox">
+                        <img class="ctaIcon" src="../root/images/svg/Volunteer.svg" alt="volunteerIcon">
+                        <h3>Volunteer</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="box"> <!---- Donate Box--->
+                <div class="box"> <!---- Donate Box--->
                     <div class="ctaBox">
                         <img class="ctaIcon" src="../root/images/svg/Donate.svg" alt="donateIcon">
                         <h3>Donate</h3>
                     </div>
                 </div>
-                    <div class="box"> <!---- Shop Box--->
-                        <div class="ctaBox">
-                            <img class="ctaIcon" src="../root/images/svg/Shop.svg" alt="shopIcon">
-                            <h3>Shop</h3>
-                        </div>
+                <div class="box"> <!---- Shop Box--->
+                    <div class="ctaBox">
+                        <img class="ctaIcon" src="../root/images/svg/Shop.svg" alt="shopIcon">
+                        <h3>Shop</h3>
                     </div>
+                </div>
 
-                        <div class="box"> <!---- Foster Box--->
-                            <div class="ctaBox">
-                                <img class="ctaIcon" src="../root/images/svg/Foster.svg" alt="fosterIcon">
-                                <h3>Foster</h3>
-                            </div>
-                        </div>
-        </div>
-    </section>
-                </main>
+                <div class="box"> <!---- Foster Box--->
+                    <div class="ctaBox">
+                        <img class="ctaIcon" src="../root/images/svg/Foster.svg" alt="fosterIcon">
+                        <h3>Foster</h3>
+                    </div>
+                </div>
+            </div>
+            </section> <!-- END ctaGrid sect  -->
+            </main>
+
             </section> <!-- END main sect container -->
             <footer>
+                <div class="footerContainer">
                 <div class="social">
                     <img class="logoBW" src="images/svg/logobw.svg" alt="Logo white">
-                    <a href="#">
-                        
-                            <img src="images/svg/faceLogo.svg" alt="facebook Logo">
+                    <a id="faceLink" href="https://www.facebook.com/Animal-Relief-Fund-ARF-272309059493160" target="_blank">                        
+                            <img id="faceLogo" src="images/svg/faceLogo.svg" alt="facebook Logo">
                             Follow ARF                        
                     </a>
                 </div>
                 <div class="address">
-                    <p>Email us:<a href="mailto:info@animalrelieffund.org">info@animalrelieffund.org</a></p>
-                    <p>Phone: (301)-866-0305</p>
-                    <p>Mail us: Animal Relief Fund
-                        P.O Box 10
-                        Hollywood, MD 20636</p>
-                    <p>Adoption hours: Saturdays 11-2pm at Well pet Clinic</p>
+                    <table>
+                        <tr>
+                            <th>Email us: </th> 
+                            <td><a href="mailto:info@animalrelieffund.org">info@animalrelieffund.org</a></td>
+                        </tr>
+                        <tr>
+                            <th>Phone: </th> 
+                            <td>(301)-866-0305</td>
+                        </tr>
+                        <tr>
+                            <th>Mail us: </th> 
+                            <td>Animal Relief Fund<br>
+                                P.O Box 10<br>
+                                Hollywood, MD 20636
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.2267169166144!2d-76.45944493038303!3d38.2649832324145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b761de5b56e167%3A0x8a1d75483bb826c4!2sWell%20Pet%20Clinic!5e0!3m2!1sen!2sus!4v1622655273434!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                <div class="map address">
+                    <table>
+                        <tr>
+                            <th>Adoption hours: </th> 
+                            <td>Saturdays 11-2pm at Well Pet Clinic</td>
+                        </tr>
+                    </table>
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.2267169166144!2d-76.45944493038303!3d38.2649832324145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b761de5b56e167%3A0x8a1d75483bb826c4!2sWell%20Pet%20Clinic!5e0!3m2!1sen!2sus!4v1622655273434!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="copyRight">
-                    <p>Copyrights reserved &copy; 2021</p>
-                </div>
+                
+            </div> <!-- END footerContainer sect  -->
+            <div class="copyRight">
+                <p>Copyrights reserved &copy; 2021</p>
+            </div>
             </footer><!-- END footer-->
     </body>
 </html>

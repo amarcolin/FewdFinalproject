@@ -60,6 +60,7 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     margin: 2.75rem 0em;
+    font-weight: 900;
 }  
 /* main header */
 header.mainHeader {
@@ -268,49 +269,62 @@ input#navToggle ~ label > span::after {
     img.logo {
         margin: 1em 1em 1em 0;
     }
-    #arf {
+    #arfBanner {
         height: 360px;
     } 
-    #arf h2 {
-        font-size: 4em;
-        font-weight: bolder;
-    }
-    #arf h3 {
-        font-size: 2em;
-        font-weight: 400;
+    
+    main {
+        max-width: 1000px;
+        margin: auto;
     }
 }
 
 /*------Footer--------*/
 footer {
     background-color: #707070;
-    display: grid;
     width: 100%;
-    height: auto; 
+    height: auto;
+    padding: 2em;
+    margin-top: 2em;
+}
+.footerContainer {
+    display: grid;
     color: #fff;
-    font: 1.1em 'Poppins', sans-serif;
-    text-transform: capitalize;
-    padding: 1em 1.3em 1.5em 1.3em;
+    font: .8em 'Poppins', sans-serif;
+    /* padding: 1em 1.3em 1.5em 1.3em; */
     text-align: center;
-    
 }
 
 .address {
-    text-align: center;
-    line-height: 2rem;
+    line-height: 1.5rem;
     padding-bottom: 2em;
+}
+.address table {
+    margin: auto;
+}
+.address table a {
+    color: #fff;
+    text-decoration: none;
+}
+.address table th{
+    text-align: right;
+    vertical-align: top;
+    padding-right: 1em;
+}
+.address table td{
+    text-align: left;
 }
 .map {
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding-bottom:160px;
     position:relative;
-    height:0;
+    /* max-height: 100px; */
     margin-bottom: 2em;
 }
+
 .map iframe{
     left:0;
-    top:0;
-    height:100%;
+    top: 60px;
     width:100%;
     position:absolute;
 }
@@ -319,32 +333,54 @@ footer {
     /* width: 100px; */
     
 }
-
-img.logoBW {
-    
-    width: 150px;    
+.copyRight {
+    text-align: center;
+    color: #fff;
+    font-size: .8em;
+    margin: 1em;
 }
 
+img.logoBW {
+    width: 150px;    
+}
+#faceLink {
+    display: block;
+    margin: 1em auto;
+    color: #fff;
+    text-decoration: none;
+}
+#faceLogo {
+    filter: invert(100%);
+}
 /* footer break point */
 
 
 @media screen and (min-width: 859px){
-    footer {
-        grid-template-columns: 1fr 1fr 1fr;
+    #arfBanner h2 {
+        font-size: 3.5em;
+    }
+    #arfBanner p {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 2.5em;
+    }
+    .footerContainer {
+        max-width: 1100px;
+        margin: auto;
+        grid-template-columns: 1fr 2fr 3fr;
         grid-template-rows: auto auto;
     }
 
-   
-
     .address {
-        
         margin: 0 .5em;
     }
 
-    
-
-    .copyRight {
-        grid-column: 2/3;
+    .map table {
+        margin: 0;
+    }
+    .map iframe{
+        top: 30px;
     }
 
 }
