@@ -114,8 +114,7 @@
                                         <!---------- EVENTS BEGIN -------------------->
                 <section class="events">
                     <h3>Coming up</h3>
-                    <h4>June 30</h4>
-                    <h4>7pm</h4>
+                    <h4>June 30<span>7 pm</span></h4>
                     <p>join us for "fostering 101" via Zoom</p>
                     <p>
                         This Live Session will give a brief overview of the rewards and challenges of fostering dogs & cats.  
@@ -128,9 +127,9 @@
                     <div>    <!-- News1 -->
                         <h3>Latest news</h3>
                         <div>
-                            <img class="petCard" src="images/availablePets/cat_thumper.jpg" alt="cat Thumper">
                             <h3>April 17, 2021</h3>
                             <h3>Adopted</h3>
+                            <img class="petCard" src="images/availablePets/cat_thumper.jpg" alt="cat Thumper">
                             <p>
                                 We are pleased to announce that our Sophie has been adopted. Be happy in your new family, Sophie!
                             </p>
@@ -140,9 +139,9 @@
                     <div>  <!-- News2 -->
                             <h3>Latest news</h3>
                             <div>
-                            <img class="petCard" src="images/availablePets/cat_thumper.jpg" alt="cat Thumper">
-                            <h3>April 17, 2021</h3>
-                            <h3>Adopted</h3>
+                                <h3>April 17, 2021</h3>
+                                <h3>Adopted</h3>
+                                 <img class="petCard" src="images/availablePets/cat_thumper.jpg" alt="cat Thumper">
                             <p>
                                 We are pleased to announce that our Sophie has been adopted. Be happy in your new family, Sophie!
                             </p>
@@ -156,52 +155,56 @@
                 <section class="callToAction">
                     <h3>Not ready<span>to adopt?</span></h3>
                     <h4>ARF is a non-profit organization dedicated to finding homes for abandoned animals.</h4>
-                    <div class="container">
-                        <ul class="mainList">
-                            <ul id="volunteerBlock" class="ctaBlock">  <!-- Volunteer -->
-                                <li>
-                                    <p><span><img src="images/svg/Volunteer.svg" alt="Volunteer icon">VOLUNTEER</span></p>
-                                </li>
-                                <li>
+                    <div class="ctaContainer">
+                        <div class="box"> <!---- Volunteer Box--->
+                            <div class="description">
+                                <p>
+                                    Give cats and dogs the gift of your time by playing with lonely pets, helping out with adoption events, or offering your professional services. 
+                                </p>
+                            </div>
+                            <div class="ctaBox">
+                                <div class="ctaContent">
+                                <img class="ctaIcon" src="../root/images/svg/Volunteer.svg" alt="volunteerIcon">
+                                <h3>Volunteer</h3>
+                                </div>
+                            </div>
+                        <div class="box"> <!---- Donate Box--->
+                                <div class="description">
                                     <p>
-                                        Give cats and dogs the gift of your time by playing with lonely pets, helping out with adoption events, or offering your professional services. 
+                                        You can make a monetary donation or send us items from our wish-list.                     
                                     </p>
-                                </li>
-                            </ul>
-        
-                            <ul id="donateBlock" class="ctaBlock"> <!-- Donate -->
-                                <li>
-                                <li>
-                                    <p><span><img src="images/svg/Donate.svg" alt="Donate icon">Donate</span></p>
-                                </li>
-                                <li>
-                                    <p>
-                                        You can make a monetary donation or send us items from our wish-list.                            
-                                    </p>
-                                </li>
-                            </ul>
-        
-                            <ul id="shopBlock" class="ctaBlock"> <!-- Shop -->
-                                <li>
-                                    <p><span><img src="images/svg/Shop.svg" alt="Shop icon">SHOP</span></p>
-                                </li>
-                                <li>
-                                    <p>
-                                        All proceeds from our store go directly to ARF to assist in animal altering, vaccinations, emergency care, general daily care, and adoption promotion.                            
-                                    </p>
-                                </li>
-                            </ul>
-                            <ul id="fosterBlock" class="ctaBlock"> <!-- Foster -->
-                                <li>
-                                    <p><span><img src="images/svg/Foster.svg" alt="Foster icon">Foster</span></p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Foster volunteers open their homes to provide temporary care for kittens, puppies, cats, and dogs.                            
-                                    </p>
-                                </li>
-                            </ul>
-                        </ul>
+                                </div>
+                            <div class="ctaContent">
+                                <div class="ctaBox">
+                                    <img class="ctaIcon" src="../root/images/svg/Donate.svg" alt="donateIcon">
+                                    <h3>Donate</h3>
+                                </div>
+                            </div>
+                                <div class="box"> <!---- Shop Box--->
+                                    <div class="description">
+                                        <p>
+                                            All proceeds from our store go directly to ARF to assist in surgeries, vaccinations, emergency care, general daily care, and adoption promotion.   
+                                        </p>
+                                    </div>
+                                <div class="ctaContent">
+                                    <div class="ctaBox">
+                                        <img class="ctaIcon" src="../root/images/svg/Volunteer.svg" alt="shopIcon">
+                                        <h3>Shop</h3>
+                                    </div>
+                                </div>
+                                    <div class="box"> <!---- Foster Box--->
+                                        <div class="description">
+                                            <p>
+                                                Foster volunteers open their homes to provide temporary care for kittens, puppies, cats, and dogs.                            
+                                            </p>
+                                        </div>
+                                    <div class="ctaContent">
+                                        <div class="ctaBox">
+                                            <img class="ctaIcon" src="../root/images/svg/Foster.svg" alt="fosterIcon">
+                                            <h3>Foster</h3>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                     
                 </section> <!-- END CTA container -->
@@ -209,16 +212,25 @@
             </section> <!-- END main sect container -->
                                              <!------ BEGIN footer ------------>
             <footer>
-                <img src="images/logobw.svg" alt="Logo white">
-                <p><span class="material-icons-outlined">facebook</span>Follow ARF</p>
-                <p>Email us:<a href="mailto:info@animallifefund.org">info@animallifefund.org</a></p>
-                <p>Phone: (301)-866-0305</p>
-                <p>Mail us: Animal Relief Fund
-                    P.O Box 10
-                    Hollywood, MD 20636</p>
-                <p>Adoption hours: Saturdays 11-2pm at Well pet Clinic</p>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.2267169166144!2d-76.45944493038303!3d38.2649832324145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b761de5b56e167%3A0x8a1d75483bb826c4!2sWell%20Pet%20Clinic!5e0!3m2!1sen!2sus!4v1622655273434!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                <div class="social">
+                    <img class="logo" src="images/svg/logobw.svg" alt="Logo white">
+                    <a href="#">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/>
+                        </svg>
+                        Follow ARF
+                    </span>
+                    </a>
+                </div>
+                <div class="address">
+                    <p>Email us:<a href="mailto:info@animalrelieffund.org">info@animalrelieffund.org</a></p>
+                    <p>Phone: (301)-866-0305</p>
+                    <p>Mail us: Animal Relief Fund
+                        P.O Box 10
+                        Hollywood, MD 20636</p>
+                    <p>Adoption hours: Saturdays 11-2pm at Well pet Clinic</p>
+                </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.2267169166144!2d-76.45944493038303!3d38.2649832324145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b761de5b56e167%3A0x8a1d75483bb826c4!2sWell%20Pet%20Clinic!5e0!3m2!1sen!2sus!4v1622655273434!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <p>Copyrights reserved &copy; 2021</p>
             </footer>

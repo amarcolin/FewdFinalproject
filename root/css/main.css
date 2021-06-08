@@ -181,7 +181,7 @@ input#navToggle ~ label > span::after {
 }
 #arfBanner h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: .6em ;
+    font-size: 1.1em ;
 }
 #arfBanner p {
     visibility: hidden;
@@ -278,3 +278,34 @@ input#navToggle ~ label > span::after {
 }
 
 /*------Footer--------*/
+footer {
+    background-color: #707070;
+    display: flexbox;
+    width: 100%;
+    height: auto; 
+    color: #fff;
+    font: 1.1em 'Poppins', sans-serif;
+    text-transform: capitalize;
+    padding: 1em 1.3em 1.5em 1.3em;
+    text-align: center;
+}
+
+.address {
+    text-align: center;
+    line-height: 2rem;
+    padding-bottom: 2em;
+}
+.map {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin-bottom: 2em;
+}
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
