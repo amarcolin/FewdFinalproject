@@ -22,12 +22,16 @@ TABLE OF CONTENTS
     8. Mid-screen layout
     9. Large-screen layout
 */
-
+h3 {
+    font-size: 2em;
+    margin-top: 0;
+}
 /* Gallery */
 .petGallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly !important;
+    margin-bottom: 1em;
 }
 .petList {
     list-style-type: none;
@@ -61,6 +65,9 @@ TABLE OF CONTENTS
     color: #fff;
     padding: 0 15px 10px 15px;
 }
+#view {
+    margin: auto !important;
+}
 /* News + Events */
 .events, .news {
     display: flex;
@@ -74,23 +81,85 @@ TABLE OF CONTENTS
 .news {
     background-color: #FEF8E5;
 }
-/* Call to action section - will fix later*/
-
-.callToAction {
-    display: flex;
-    flex-wrap: wrap;
-    padding: auto 1em;
-    margin: 1em 0;
-    width:80%;
+/* Call to action section */
+.ctaGrid h3 {
+    margin: .5em;
 }
-
-.ctaContent {
-    background-color: #707070;
+.ctaGrid h4 {
+    font-size: 1.8em;
+    line-height: 1.5;
+    padding: .3em;
+    text-align: center;
+}
+.box {
+    text-decoration: none;
 }
 .ctaBox h3 {
-color: #fff;
-font: 1.2em 'Poppins', sans-serif; 
+    color: #fff;
+    font: 1.2em 'Poppins', sans-serif; 
+    font-weight: 600;
+    margin-bottom: 10px;
+    max-width: 200px;
 }
-.description p {
-visibility: hidden;
+.left h3 {
+    display: block;
+}
+.ctaContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.description {
+    visibility: collapse;
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    display: block;
+    width: 200px;
+}
+.ctaIcon {
+    max-width: 200px;
+}
+#volunteerBox {
+    background-color: #3662F8;
+}
+#donateBox {
+    background-color: #FFB919;
+}
+#fosterBox {
+    background-color: #FF5E63;
+}
+#shopBox {
+    background-color: #BABCBC;
+}
+@media screen and (min-width:401px) {
+    .left {
+        position: relative;
+    }
+    .left .ctaIcon {
+        position: absolute;
+        right: 0;
+    }
+    .left h3 {
+        width: 200px;
+        position: absolute;
+        right: 0;
+        bottom: -244px;
+    }
+}
+@media screen and (min-width:859px) {
+    .description {
+        visibility: visible;
+    }
+    .ctaBox {
+        position: relative;
+    }
+    .right .description {
+        left: 220px;
+        top: 40px;
+    }
+    .left .description {
+        right: 220px;
+        top: 40px;
+    }
 }
