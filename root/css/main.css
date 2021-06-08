@@ -334,18 +334,14 @@ img.logoBW {
         grid-template-rows: auto auto;
     }
 
-    .social {
-        grid: 1/2;
-    }
+   
 
     .address {
-        grid: 2/3;
+        
         margin: 0 .5em;
     }
 
-    .map {        
-        grid: 3/4;
-    }
+    
 
     .copyRight {
         grid-column: 2/3;
