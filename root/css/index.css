@@ -24,6 +24,9 @@ TABLE OF CONTENTS
 */
 
 /* Gallery */
+.icon {
+   width: 3em;
+}
 .petGallery {
     display: flex;
     flex-wrap: wrap;
@@ -55,42 +58,99 @@ TABLE OF CONTENTS
 .petCardName {
     font-size: 1.2em;
     padding: 10px 15px;
-    color: #fff;
+    color: #fff !important;
 }
 .petCardAbout {
     color: #fff;
     padding: 0 15px 10px 15px;
 }
+
+.bttn {
+    display: flex;
+    padding: 0.8em 0.8em;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.bttn>a {
+    font: 1.2em 'Poppins', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    padding: 0.6em;
+    background-color: #3662F8;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 0.6em;
+    tranform: scale(0);
+}
+
+
 /* News + Events */
 .events, .news {
-    display: flex;
-    flex-wrap: wrap;
+    display: flexbox;
    padding: 1em 1.3em 1.5em 1.3em;
+   text-align: center;
 }
+.events h4 , .news h4 {
+    color:#3662F8;
+    font-size: 1.1em;
+    text-transform: uppercase;
+  padding-bottom: 0.6em;
+}
+
 .events {
     background-color: #F1F2FF;
+    justify-content: center;
+    line-height: 1.7em;
+}
+.events span {
+    padding-left: 1em;
 }
 
 .news {
     background-color: #FEF8E5;
-}
-/* Call to action section - will fix later*/
+    display: inline-flexbox;
+    justify-content: space-evenly;
 
-.callToAction {
+}
+
+.news h5 {
+    display: inline;
+    color: #717171;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    border-bottom: #707070 2px solid;
+}
+
+
+
+/* Call to action section - will fix
+ later*/
+.box {
+display: inline-flex;
+flex-wrap: wrap;
+width: 25%;
+padding: 2em;
+}
+/*.callToAction {
     display: flex;
     flex-wrap: wrap;
-    padding: auto 1em;
+    
     margin: 1em 0;
     width:80%;
 }
+*/
+.ctaBox {
+    padding: 1em 1em;
+    color: #fff;
+    font: 1.2em 'Poppins', sans-serif;
+    height: 10em; 
+    background-color: #3662F8;
+        }
 
-.ctaContent {
-    background-color: #707070;
-}
-.ctaBox h3 {
-color: #fff;
-font: 1.2em 'Poppins', sans-serif; 
-}
-.description p {
-visibility: hidden;
-}
+.ctaContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
