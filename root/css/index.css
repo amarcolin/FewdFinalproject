@@ -24,9 +24,7 @@ TABLE OF CONTENTS
 */
 
 /* Gallery */
-.icon {
-   width: 3em;
-}
+
 .petGallery {
     display: flex;
     flex-wrap: wrap;
@@ -126,11 +124,12 @@ TABLE OF CONTENTS
 
 /* Call to action section - will fix
  later*/
+ .ctaContainer {
+     display: flex;
+ }
 .box {
-display: inline-flex;
-flex-wrap: wrap;
+display: inline-block;
 width: 25%;
-padding: 2em;
 }
 /*.callToAction {
     display: flex;
@@ -146,6 +145,7 @@ padding: 2em;
     font: 1.2em 'Poppins', sans-serif;
     height: 10em; 
     background-color: #3662F8;
+    padding: 2em;
         }
 
 .ctaContainer:after {
@@ -154,3 +154,6 @@ padding: 2em;
     clear: both;
   }
   
+  @media screen and (min-width: 859px){
+
+    
