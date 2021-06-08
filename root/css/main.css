@@ -50,7 +50,7 @@ img {
     height: auto;
 }
 
-img.logo {
+img.logoARF {
         margin: 1em 0 1em 2.5em;
         width: 150px;    
 }
@@ -166,25 +166,29 @@ input#navToggle ~ label > span::after {
 
 
 #arfBanner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     /* position: relative; */
-    /*background-position: center center;
+    text-align: center;
+    background-image: url('../images/bg-banner.png');
+    background-position: center center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/bg-banner.png') no-repeat center center;
     background-size: cover;
-    height:10em; 
-    padding: 1em 1em;
+    height: 250px;
+    padding: 89px 15px;
+    font-family: 'Nunito', sans-serif; 
+    text-shadow: 1px 1px gray;
 }
 #arfBanner h2 {
-    font-family: 'Nunito', sans-serif;
-    font-size: .6em ;
+    font-size: 2em;
+    font-weight: 900;
+    color: white;
 }
-#arfBanner p {
-    visibility: hidden;
+
+#arf h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: white;
 }
 /* info box */
 .infobox {
