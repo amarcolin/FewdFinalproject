@@ -26,7 +26,12 @@ h3 {
     font-size: 2em;
     margin-top: 0;
 }
-/* Gallery */
+.infobox p{
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 10px;
+}
+/* --------------Gallery --------------*/
 .petGallery {
     display: flex;
     flex-wrap: wrap;
@@ -57,9 +62,9 @@ h3 {
     background-color: rgba(112, 112, 112, .6);
 }
 .petCardName {
-    font-size: 1.2em;
-    padding: 10px 15px;
-    color: #fff;
+    font-size: 1.2em !important;
+    padding: 10px 15px !important;
+    color: #fff !important; 
 }
 .petCardAbout {
     color: #fff;
@@ -68,20 +73,50 @@ h3 {
 #view {
     margin: auto !important;
 }
-/* News + Events */
-.events, .news {
-    display: flex;
-    flex-wrap: wrap;
-   padding: 1em 1.3em 1.5em 1.3em;
+
+/* --------------News + Events --------------*/
+.eventBox, .news {
+    padding: 1em 10px 1.5em 10px;
 }
 .events {
+    padding-top: 1em;
     background-color: #F1F2FF;
 }
-
+.events h3 {
+    margin-bottom: .5em;
+}
+.events h4, .news h4 {
+    color: #3662F8;
+    font-size: 1.4em;
+    text-align: center;
+}
+.events h5, .news h5 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    text-align: center;
+    padding: .5em;
+}
+.news p {
+    padding-bottom: 10px;
+}
 .news {
     background-color: #FEF8E5;
 }
-/* Call to action section */
+.newsBox {
+    border-bottom: black solid 1px;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.newsDescript a {
+    color: black;
+}
+#facebookLink {
+    text-decoration: none;
+    padding-top: 10px;
+    color: black;
+}
+/* --------------Call to action section --------------*/
 .ctaGrid h3 {
     margin: .5em;
 }
@@ -115,7 +150,7 @@ h3 {
     color: white;
     font-weight: 500;
     display: block;
-    width: 200px;
+    max-width: 200px;
 }
 .ctaIcon {
     max-width: 200px;
@@ -133,6 +168,7 @@ h3 {
     background-color: #BABCBC;
 }
 @media screen and (min-width:401px) {
+    /* --------------Call to action section --------------*/
     .left {
         position: relative;
     }
@@ -147,7 +183,39 @@ h3 {
         bottom: -244px;
     }
 }
+@media screen and (min-width:501px) {
+    .petList {
+        padding: 1vw !important;
+    }
+    .newsBox {
+        grid-template-columns: 2fr 3fr;
+}
+@media screen and (min-width:701px) {
+    #infoBlock {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .eventBox {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .eventDescript {
+        order: -1;
+        padding: 0 1em;
+    }
+    .eventHeader h4 {
+        font-size: 2em;
+    }
+    
+    #eventImg {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: -280px;
+    }
+}
 @media screen and (min-width:859px) {
+    /* --------------Call to action section --------------*/
     .description {
         visibility: visible;
     }
