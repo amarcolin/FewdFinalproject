@@ -56,38 +56,29 @@
            <main>   
 	    <section>
 		<div class="formContainer">
-			<form>
-				<span>
-                    <h3>We'd love to hear from you</h3>
-				</span>
+            <h3>We'd love to hear from you</h3>
+			<form action="#" method="POST" id="contactForm" enctype="text/plain">
+				<fieldset>                    
+                    <ul>
+                        <li id="item1">
+                            <label for="fName">Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Smith" required>
+                        </li>                         
+                        <li id="item3">
+                            <label for="email">E-Mail:</label>
+                            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                        </li>
+                        <li id="item4">
+                            <label for="phoneNum">Phone Number</label>
+                            <input type="text" id="phoneNum" name="phoneNum" inputmode="numeric" placeholder="(xxx) xxx-xxxx" required>
+                        </li>
+                        <li id="item5">
+                            <label for="msg">Message</label>
+                            <textarea name="msg" id="msg" placeholder="Please write your message here..."></textarea></li>
+                    </ul>
+                    <input type="submit" id="submit" class="button" value="Send">
+                </fieldset>
 
-				<div data-validate="Please enter your name">
-					<input type="text" name="name" placeholder="Full Name">
-					<span">Name</span>
-				</div>
-
-				<div data-validate = "Please enter your email: e@a.x">
-					<input type="text" name="email" placeholder="E-mail">
-					<span">/email</span>
-				</div>
-
-				<div data-validate = "Please enter your phone number">
-					<input class="input100" type="text" name="phone" placeholder="Phone">
-					<span>Phone</span>
-				</div>
-
-				<div data-validate = "Please enter your message">
-					<textarea name="message" placeholder="Your Message"></textarea>
-					<span></span>
-				</div>
-
-				<div>
-					<button>
-						<span>
-							Send
-						</span>
-					</button>
-				</div>
 			</form>
 		</div>
 	</div>
