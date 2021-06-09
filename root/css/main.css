@@ -170,12 +170,12 @@ input#navToggle ~ label > span::after {
 
 #arfBanner {
     color: white;
-    /* position: relative; */
+    
     text-align: center;
     background-image: url('../images/bg-banner.png');
     background-position: center center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+   
     background-size: cover;
     height: 250px;
     padding: 89px 15px;
@@ -194,10 +194,10 @@ input#navToggle ~ label > span::after {
 /* info box */
 .infobox {
     color: white;
-    /* position: relative; */
+    
     text-align: center;
     background-color: #FEB200;
-    /* background-attachment: fixed; */
+   
     background-size: cover;
     padding: 1em 1.3em 1.5em 1.3em;
     font-family: 'Quicksand', sans-serif;
@@ -281,7 +281,7 @@ footer {
     display: grid;
     color: #fff;
     font: .8em 'Poppins', sans-serif;
-    /* padding: 1em 1.3em 1.5em 1.3em; */
+    
     text-align: center;
 }
 
@@ -308,7 +308,7 @@ footer {
     overflow:hidden;
     padding-bottom:160px;
     position:relative;
-    /* max-height: 100px; */
+    
     margin-bottom: 2em;
 }
 
