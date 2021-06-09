@@ -87,8 +87,7 @@ nav.mainNav * {
 .mainNav ul > li{
     display: block;
     text-align: center;
-    /* width: 96px;  */
-    /* height: 25px; */
+    
     list-style-type: none;
     background-color: #fff;             
 }
@@ -163,7 +162,7 @@ input#navToggle ~ label > span::after {
     left: 0;
 }
 
-/* 
+
 
 /* banner */
 
@@ -172,7 +171,7 @@ input#navToggle ~ label > span::after {
     color: white;
     
     text-align: center;
-    background-image: url('../images/bg-banner.png');
+    background-image: url('../images/bg-banner.jpg');
     background-position: center center;
     background-repeat: no-repeat;
    
