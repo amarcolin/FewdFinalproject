@@ -13,7 +13,16 @@ color palette:
 #FFB919 - yellow (accent color)
 #FEF8E5 - pale yellow (block text background)
 #FF5E63 - red (accent color)
+
+TABLE OF CONTENTS
+    1. global styles
+    2. Pet profile section
+    3. Gallery section
+    4. Large-screen layout
 */
+
+/* ---------global styles--------- */
+
 
 .availableProducts h2 {
     font-size: 1.7em;

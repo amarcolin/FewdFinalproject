@@ -16,8 +16,13 @@ color palette:
 
 
 TABLE OF CONTENTS
+        1. pet gallery section
+        2. popup form 
+        3. break points
+
 
 */
+/* --------- pet gallery section  --------- */
 .availablePets h2 {
     font-size: 1.7em;
     font-weight: bold;
@@ -63,7 +68,7 @@ TABLE OF CONTENTS
     padding: 0 15px 10px 15px;
 }
 
-/* popup form */
+/* --------- popup form --------- */
 
 .overlay {
     position: absolute;
@@ -189,6 +194,7 @@ TABLE OF CONTENTS
     font-weight: bold;
 }
 
+/* ----------break points---------- */
 @media screen and (min-width: 600px) {
     .petCardBox {
         width: 30vw;
