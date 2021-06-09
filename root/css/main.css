@@ -209,7 +209,7 @@ input#navToggle ~ label > span::after {
 
 /* Break Point */
 
-@media screen and (min-width: 859px){
+@media screen and (min-width: 888px){
 
     .navToggleLabel {
 
