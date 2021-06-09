@@ -42,7 +42,6 @@ fieldset {
     list-style-type: none;
 }
 
-
 fieldset#cardField {
     background-color: #FFF3CE;
     margin: .75em;
@@ -95,6 +94,8 @@ fieldset#cardField {
     padding: .75em;
     margin: .75em 0;
     font-weight: bold;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 div.wrapSummit {
@@ -158,7 +159,7 @@ fieldset#donateButtons {
   
 .donateAmount input[type="radio"]:checked+label,
 .Checked+label {
-    background: yellow;
+    background: #FFB919;
 }
   
 .donateAmount label {
@@ -168,6 +169,8 @@ fieldset#donateButtons {
     cursor: pointer;
     z-index: 90;
     background-color: #3662F8;
+    color: #fff;
+    font-weight: 600;
     
 }
   
