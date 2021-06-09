@@ -22,6 +22,9 @@ TABLE OF CONTENTS
 */
 
 /* ---------global styles--------- */
+a {
+    text-decoration: none;
+}
 #arf {
     background-image: url('../images/bg-banner3.png');
 }
@@ -85,14 +88,12 @@ button {
     border-radius: 10px;
     display: block;
     margin: .5em auto 0;
-}
-button a {
     font-family: 'Poppins';
     font-size: 1.2em;
     font-weight: 600;
     color: #fff;
-    text-decoration: none;
 }
+
 #adopt {
     background-color: #FF5E63;
     border-color: #FF5E63;
