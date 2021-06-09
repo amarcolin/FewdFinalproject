@@ -48,6 +48,11 @@ textarea {
 input {
     height: 25px;
 }
+input, textarea{
+    
+    border-radius: 15px;
+    padding: .5em;
+}
 
 #submit {
     background-color: #3662F8;
@@ -57,3 +62,4 @@ input {
     margin: .75em 0;
     font-weight: bold;
 }
+
