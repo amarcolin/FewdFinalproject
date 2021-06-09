@@ -123,7 +123,9 @@ li.active a {
     border-right: solid 1px gray;
     color: #EF4147;
 }
-
+#active {
+    color: #EF4147;
+}
 input#navToggle {
     display: none;
 }
@@ -201,16 +203,6 @@ input#navToggle ~ label > span::after {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.1em;
 }
-/*
-#arf h2 {
-    font-size: 2em;
-    font-weight: 900;
-}
-#arf h3 {
-    font-size: 1.5em;
-    font-weight: normal;
-}
-*/
 
 .infobox a {
     color: #fff;
@@ -257,7 +249,7 @@ input#navToggle ~ label > span::after {
 
     .mainNav ul > li {
         position: relative;
-        width: 96px;
+        width: 101px;
     }
 
     .mainNav li ul li {
@@ -327,10 +319,6 @@ footer {
     position:absolute;
 }
 
-.logoFB {
-    /* width: 100px; */
-    
-}
 .copyRight {
     text-align: center;
     color: #fff;
