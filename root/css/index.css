@@ -16,11 +16,9 @@ color palette:
 
 TABLE OF CONTENTS
     1. Gallery
-    2. Events
-    3. News
-    4. special styles
-    8. Mid-screen layout
-    9. Large-screen layout
+    2. infoBlock
+    3. Call to action section
+    4. Large-screen layout
 */
 h3 {
     font-size: 2em;
@@ -74,7 +72,7 @@ h3 {
     margin: auto !important;
 }
 
-/* --------------News + Events --------------*/
+/* --------------infoBlock section --------------*/
 .eventBox, .news {
     padding: 1em 10px 1.5em 10px;
 }
@@ -184,13 +182,16 @@ h3 {
     }
 }
 @media screen and (min-width:501px) {
+    /* --------------infoBlock section --------------*/
     .petList {
         padding: 1vw !important;
     }
     .newsBox {
         grid-template-columns: 2fr 3fr;
+    }
 }
 @media screen and (min-width:701px) {
+    /* --------------infoBlock section --------------*/
     #infoBlock {
         display: grid;
         grid-template-columns: 1fr 1fr;

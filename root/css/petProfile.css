@@ -1,4 +1,32 @@
+/*
+font-family: 'Nunito', sans-serif; HEADERS
+font-family: 'Poppins', sans-serif; links, buttons, labels, menus.
+font-family: 'Quicksand', sans-serif; Paragraphs
+ 
 
+color palette:
+#313131 - dark grey for text
+#707070 - grey (footer background)
+#BABCBC - light grey for less used buttons (shop, search)
+#3662F8 - blue (headers, buttons, links, topbar menu)
+#F1F2FF - pale blue (block text background)
+#FFB919 - yellow (accent color)
+#FEF8E5 - pale yellow (block text background)
+#FF5E63 - red (accent color)
+
+TABLE OF CONTENTS
+    1. global styles
+    2. Pet profile section
+    3. Gallery section
+    4. Large-screen layout
+*/
+
+/* ---------global styles--------- */
+#arf {
+    background-image: url('../images/bg-banner3.png');
+}
+
+/* ---------Pet profile section---------- */
 .petProfile h3{
     color: #3662F8;
     font-size: 1.8em;
@@ -78,6 +106,7 @@ button a {
     bottom: 0px;
     left: -10px;
 }
+/* ---------Gallery section--------- */
 #view {
     background-color: #3662F8;
     border-color: #3662F8;
@@ -87,9 +116,8 @@ button a {
     padding-top: 2em;
     padding-bottom: 2em;
 }
-#arf {
-    background-image: url('../images/bg-banner3.png');
-}
+
+/* ---------Large-screen layout--------- */
 @media screen and (min-width:501px){
     .petProfile h3 {
         margin: 1em auto;

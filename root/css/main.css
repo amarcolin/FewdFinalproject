@@ -30,19 +30,19 @@ TABLE OF CONTENTS
 /* 1. global styles */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&family=Poppins:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-* {                 
+* {                                                          /* universal selector*/                               
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}           /*  This is just a place holder  */
+}           
 
-header, section, article, aside, nav, footer, main, figure, audio, video {
+header, section, article, aside, nav, footer, main, figure, audio, video {               /* group selector*/ 
     display: block;
 }
 body {
     font-family: 'Quicksand', sans-serif;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {  /*group selector */
     font-family: 'Nunito', sans-serif;
 }
 img { 
@@ -55,7 +55,7 @@ img.logoARF {
         width: 150px;    
 }
 
-h3 {
+h3 {                                            /* type selector*/
     color: #3662F8;
     text-align: center;
     text-transform: uppercase;
@@ -74,11 +74,11 @@ nav.mainNav * {
     border: none;
 }
 
-.mainNav  {
+.mainNav  {   /* class selector*/ 
     position: relative;
     height: 0;
 }
-.mainNav ul{
+.mainNav ul{                                /* Descendant Selector*/
     background-color: white;
     
 }
@@ -123,22 +123,22 @@ li.active a {
     border-right: solid 1px gray;
     color: #EF4147;
 }
-#active {
+#active {                                       /* id selector*/ 
     color: #EF4147;
 }
 input#navToggle {
     display: none;
 }
 
-input#navToggle ~ label {
+input#navToggle ~ label {                       /* General Sibling Selector selector*/ 
     position: relative;
     width: 2rem;
     height: 1.25rem;
     
 }
 
-input#navToggle ~ label > span,
-input#navToggle ~ label > span::before,
+input#navToggle ~ label > span,                 /* Child Selector (>)*/
+input#navToggle ~ label > span::before,         /* Pseudo elements selector */
 input#navToggle ~ label > span::after {
     content: "";
     display: block;
