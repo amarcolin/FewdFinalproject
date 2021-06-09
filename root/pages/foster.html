@@ -17,9 +17,7 @@
 <body>    
     <section id="container">
         <header class="mainHeader">
-            <a href="../index.html">
-                <img class="logoARF" src="../images/svg/logo.svg" alt="logoARF">
-            </a>
+            <img class="logoARF" src="../images/logo.png" alt="logoARF">
             <nav class="mainNav">
                 <input type="checkbox" id="navToggle" class="navToggle">
                 <label for="navToggle" class="navToggleLabel"><span></span></label>
@@ -32,11 +30,11 @@
                             <li class="active"><a href="../pages/adoptionProcess.html">Adoption Process</a></li>
                         </ul>   
                     </li>
-                    <li ><a href="#">Support Us</a>
+                    <li id="active"><a href="#">Support Us</a>
                         <ul>
                             <li><a href="../pages/support.html">Donate</a></li>
-                            <li class="active"><a href="../pages/foster.html">Foster</a></li>
-                            <li><a href="../pages/volunteer.html">Volunteer</a></li>
+                            <li><a href="../pages/foster.html">Foster</a></li>
+                            <li class="active"><a href="../pages/volunteer.html">Volunteer</a></li>
                         </ul> 
                     </li>
                     <li><a href="../pages/shop.html">Shop ARF</a></li>
@@ -50,11 +48,9 @@
             <h2>Foster</h2>
             <p>Join our foster program</p>
 	    </header>
-        <main>
-        <header>
             <h3>Foster Request/Agreement</h3>
-        </header>
             <h4>Considering becoming a foster parent to help out pets in need? just fill out the forms below to get the process started</h4>
+    <main>
         <section class="formContact">
             <form action="#" method="POST" id="contactForm" enctype="text/plain">
                 <div class="formContainer">
@@ -64,50 +60,85 @@
                             <ul id="infoForm">
                                 <li id="item1">
                                     <label for="fName">First Name</label>
-                                    <input type="text" id="fName" name="first_name" placeholder="John" required>
+                                    <input type="text" id="fName" name="first_name" placeholder="" required>
                                 </li>
                                 <li id="item2">
                                     <label for="lName">Last Name</label>
-                                    <input type="text" id="lName" name="last_name" placeholder="Smith" required>
+                                    <input type="text" id="lName" name="last_name" placeholder="" required>
                                 </li>
                                 <li id="item3">
                                     <label for="email">E-Mail:</label>
-                                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                                    <input type="email" id="email" name="email" placeholder="" required>
                                 </li>
                                 <li id="item4">
-                                    <label for="add">Address</label>
-                                    <input type="text" id="add" name="address" placeholder="jane st." required>
+                                    <label>Address</label>
+                                    <input type="text" id="add" name="address" placeholder="" required>
                                 </li>
                                 <li id="item5">
                                     <label for="city">City</label>
-                                    <input type="text" id="city" name="city" placeholder="San Diego" required>
+                                    <input type="text" id="city" name="city" placeholder="" required>
                                 </li>
                                 <li id="item6">
                                     <label for="state">State/Province</label>
-                                    <input type="text" id="state" name="state" placeholder="CA" required>
+                                    <input type="text" id="state" name="state" placeholder="" required>
                                 </li>
                                 <li id="item7">
                                     <label for="zip">Zip/Postal Code</label>
-                                    <input type="text" id="zip" name="zip" placeholder="92064" required>
+                                    <input type="text" id="zip" name="zip" placeholder="" required>
                                 </li>
                                 <li id="item8">
                                     <label for="number">Cell/Home Phone #</label>
-                                  <input type="text" id="number" name="number" placeholder="#" required>
-                              </li>
+                                    <input type="text" id="number" name="number" placeholder="" required>
+                                </li>
+                            </ul>
+                    </fieldset>
+                    <h6>Additional Information</h6>
+                    <fieldset id="mrInfo">
+                        <p>What animal(s) are you primarily interested in fostering?</p>
+                                    <input type="radio" id="dogs" name="dogs" value="animals">
+                                    <label>Dogs</label>
+                                    <input type="radio" id="Cats" name="contact" value="animals">
+                                    <label>cats</label>
+                            <ul id="mrInfoForm">
+                                <li id="item9">
+                                    <label>Please list the Name/Breed/Sex/Age of the pets currently in your home. ex: Rex/Pit Bull/M/2 years</label>
+                                    <textarea rows="5" cols="100"></textarea>
+                                </li>
+                                <li id="item10">
+                                    <label>Please list your VET and the last time your pet(s) were vaccinated. EX: Well Pet Clinic in Lexington Park, MD - Rex/02/05/2005</label>
+                                    <textarea rows="5" cols="100"></textarea>
+                                </li>
+                                <li id="item11">
+                                    <label>How many children live in your home and what are their ages?</label>
+					                <textarea rows="5" cols="100"></textarea>
+                                </li>
+                                <li id="item12">
+                                    <label>Have you ever Fostered animals before? If yes, for whom/what?</label>
+                                     <textarea rows="5" cols="100"></textarea>
+                                </li>
+                                <li id="item13">
+                                    <label>Are you able to insure that your foster animal will be able to attend ALL Saturday Adoption days?</label>
+                                    <textarea rows="5" cols="100"></textarea>
+                                </li>
+                                <li id="item14">
+                                    <label>Please describe how you plan to exercise your intended animal.</label>
+                                    <textarea rows="5" cols="100"></textarea>
+                                </li>
+                                <li id="item15">
+                                    <label>What ways do you plan to socialize your foster animal with people and other animals?</label>
+                                    <textarea rows="5" cols="100"></textarea>
+                                </li>
                             </ul>
                             <div class="wrapSummit">
                               <input type="submit" id="submit" class="button" value="submit">
                             </div>
-                    </fieldset>
-                </div>
-            </form> 
+                            </fieldset>
+                        </div>
+                    </form>
         </section>
-    </main>   
-    </section>
-    
-
-    <footer>
-    <div class="footerContainer">
+        </main>
+            <footer>
+        <div class="footerContainer">
         <div class="social">
             <img class="logoBW" src="../images/svg/logobw.svg" alt="Logo white">
             <a id="faceLink" href="https://www.facebook.com/Animal-Relief-Fund-ARF-272309059493160" target="_blank">                        
@@ -142,7 +173,7 @@
                 </tr>
             </table>
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.2267169166144!2d-76.45944493038303!3d38.2649832324145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b761de5b56e167%3A0x8a1d75483bb826c4!2sWell%20Pet%20Clinic!5e0!3m2!1sen!2sus!4v1622655273434!5m2!1sen!2sus" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.2267169166144!2d-76.45944493038303!3d38.2649832324145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b761de5b56e167%3A0x8a1d75483bb826c4!2sWell%20Pet%20Clinic!5e0!3m2!1sen!2sus!4v1622655273434!5m2!1sen!2sus" allowfullscreen="" ></iframe>
         </div>
         
     </div> <!-- END footerContainer sect  -->
@@ -150,5 +181,6 @@
         <p>Copyrights reserved &copy; 2021</p>
     </div>
     </footer><!-- END footer-->
-    </body>
+    </section>
+</body>
 </html>
